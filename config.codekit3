@@ -305,41 +305,41 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/elements\/Toaster1.jpg" : {
+    "\/deploy\/img\/elements\/toaster1.jpg" : {
       "ft" : 16384,
       "iS" : 63426,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/elements\/Toaster1.jpg",
+      "oAP" : "\/deploy\/img\/elements\/toaster1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/elements\/Toaster2.jpg" : {
+    "\/deploy\/img\/elements\/toaster2.jpg" : {
       "ft" : 16384,
       "iS" : 107299,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/elements\/Toaster2.jpg",
+      "oAP" : "\/deploy\/img\/elements\/toaster2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/elements\/Toaster3.jpg" : {
+    "\/deploy\/img\/elements\/toaster3.jpg" : {
       "ft" : 16384,
       "iS" : 83663,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/elements\/Toaster3.jpg",
+      "oAP" : "\/deploy\/img\/elements\/toaster3.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -488,6 +488,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/accessories.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
+    },
     "\/dev\/content\/features.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -500,9 +508,17 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oF" : 3
+    },
+    "\/dev\/content\/product.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -510,23 +526,23 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oF" : 3
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/global\/head.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oF" : 3
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
