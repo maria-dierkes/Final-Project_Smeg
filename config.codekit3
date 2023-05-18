@@ -124,6 +124,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/plus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/plus.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/product1.jpg" : {
       "ft" : 16384,
       "iS" : 46235,
@@ -394,6 +404,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/global\/plus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/global\/plus.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/global\/search.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -504,6 +524,14 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 3
     },
+    "\/dev\/content\/gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 2
+    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -513,6 +541,14 @@
       "oF" : 3
     },
     "\/dev\/content\/product.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
+    },
+    "\/dev\/content\/reviews.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
