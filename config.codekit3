@@ -271,6 +271,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/elements\/pinktoaster.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/elements\/pinktoaster.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/elements\/product1.jpg" : {
       "ft" : 16384,
       "iS" : 46235,
@@ -565,6 +575,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/global\/smallcircle.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/global\/smallcircle.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/global\/wholecircle.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -675,6 +695,22 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
+    "\/dev\/content\/checkout\/placeorder.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/checkout\/timeline.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 3
+    },
     "\/dev\/content\/index\/accessories.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -722,6 +758,14 @@
       "oA" : 1,
       "oAP" : "\/dev\/content\/index\/reviews.html",
       "oF" : 0
+    },
+    "\/dev\/content\/thankyou\/finished.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 3
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
