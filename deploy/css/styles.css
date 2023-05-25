@@ -405,3 +405,6 @@ section div img {
 /* =============
     features
 ============= */
+section div ul li {
+  list-style: none;
+}

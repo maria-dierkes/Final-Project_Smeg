@@ -1,3 +1,66 @@
 /* =============
     Navigation
 ============= */
+
+
+// .show-menu{
+//     display: block !important;
+// }
+
+// html{
+//     scroll-behavior: smooth;
+// }
+
+// nav{
+
+//     display: none;
+//     text-align: right;
+
+    
+
+//     @include lg{
+//         display: block;
+//     }
+
+//     ul{
+//         position: center;
+//         @include lg{
+//             display: flex;
+//             justify-content: flex-end;
+//             align-items: center;
+//         }
+
+
+//         li{
+//             display: inline-block;
+//             text-align: right;
+
+//             @include lg{
+//                 margin-left: 16px;
+//             }
+//             a:link, a:visited{
+//                 display: inline-block;
+//                 color: var(--flower);
+//                 font-family: 'Poppins', 'Regular', 'Sans-serif';
+//                 font-size: 20px;
+//                 padding: 24px 26px;
+                
+//                 @include lg{
+//                     padding: 24px 26px;
+//                     transition: 0.25s;
+//                     border-radius: 6px;
+//                     padding: 24px 36px;
+//                     border: 1px solid var(--iceblue);
+//                 }
+
+//                 &:hover, &:active{
+//                     @include lg{
+//                         background-color: var(--ice);
+//                         color: var(--flower)  
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
