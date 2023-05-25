@@ -659,6 +659,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
     "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -667,53 +675,53 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
-    "\/dev\/content\/accessories.kit" : {
+    "\/dev\/content\/index\/accessories.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/accessories.html",
+      "oF" : 2
     },
-    "\/dev\/content\/features.kit" : {
+    "\/dev\/content\/index\/features.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/features.html",
+      "oF" : 2
     },
-    "\/dev\/content\/gallery.kit" : {
+    "\/dev\/content\/index\/gallery.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/gallery.html",
+      "oF" : 2
     },
-    "\/dev\/content\/hero.kit" : {
+    "\/dev\/content\/index\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/hero.html",
+      "oF" : 2
     },
-    "\/dev\/content\/product.kit" : {
+    "\/dev\/content\/index\/product.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/product.html",
+      "oF" : 2
     },
-    "\/dev\/content\/reviews.kit" : {
+    "\/dev\/content\/index\/reviews.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/index\/reviews.html",
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -1020,6 +1028,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 2
     },
     "\/README.md" : {
       "cB" : 0,
