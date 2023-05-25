@@ -2,147 +2,130 @@
     Footer
 ============= */
 
-section{
+
+footer{
+
+    background-color: var(--darkgrayblue);
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+
+    // @include xxl{
+    //     display: grid;
+    //     grid-template-columns: auto 1440px auto;
+    // }
+
     div{
-        background-color: bisque;
-    }
+        grid-area: footer;
+        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        color: var(--stormblue);
+        input{
+            border: none;
+            background-color: var(--stormblue);
+            color:var(--iceblue);
+            padding: 16px 24px;
+            width: 287px;
+        }
+        button{
+            background-color:var(--flower);
+            color: var(--iceblue);
+            border: none;
+            padding: 16px 24px;
+            
+        }
+        
+        #address{
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: address;
+        }
+
+        #subscribe{
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: subscribe;
+            scroll-margin-top: 200px;
+
+            a:link, a:visited {
+
+                color: (var(--iceblue));
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 16px;
+                background-color: (var(--flower));
+                display: inline-block;
+                transition: 0.25s;
+                text-align: right;
+                border-radius: 0;
+                
+                &:hover,
+                &:active {
+                    background-color: (var(--lightflower));
+                    padding: 20px;
+                }
+            }   
+
+        }
+
+        #social{
+            grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: social;
+            ul{
+                display: flex;
+                gap: 24px;
+
+                a:link, a:visited {
+
+                    color: (var(--iceblue));
+                    text-decoration: none;
+                    padding: 10px;
+                    display: inline-block;
+                    transition: 0.15s;
+                    text-align: right;
+                    
+                    &:hover,
+                    &:active {
+                        background-color: (var(--flower));
+                        color: (var(--flower));
+                        border-radius: 20%;
+                        padding: 16px;
+                    }
+                }   
+            }
+        }
+
+        #copyright{
+            // grid-template-columns: 70% auto;
+            padding: 16px;
+            grid-area: copyright;
+        }
+
+        
+
+
+        // @include md{
+        //     display: grid;
+        //     grid-template-columns: repeat (2, 1fr);
+        //     grid-template-rows: 30% auto;
+        //     grid-template-areas:
+        //     "address subscribe"
+        //     " . social"
+        //     "copyright .";
+        // }
+        // @include lg{
+        //         display: grid;
+        //         grid-template-columns: repeat (3, 1fr);
+        //         grid-template-areas:
+        //         "address subscribe social"
+        //         "copyright . .";
+
+        // }
+    }  
 }
 
 
-// footer{
-
-//     background-color: #2E3949;
-//     display: grid;
-//     grid-template-columns: 16px auto 16px;
-//     grid-template-areas: ". footer .";
-
-//     @include xxl{
-//         display: grid;
-//         grid-template-columns: auto 1440px auto;
-//     }
-
-//     >div{
-//         grid-area: footer;
-//         font-family: 'Poppins', 'Regular', 'Sans-serif';
-//         color: var(--stormblue);
-//         input{
-//             border: none;
-//             background-color: var(--stormblue);
-//             color:var(--iceblue);
-//             padding: 16px 24px;
-//             width: 287px;
-//         }
-//         button{
-//             background-color:var(--flower);
-//             color: var(--iceblue);
-//             border: none;
-//             padding: 16px 24px;
-            
-//         }
-        
-//         #address{
-//             grid-template-columns: 70% auto;
-//             padding: 16px;
-//             grid-area: address;
-
-//             a:link, a:visited {
-
-//                 color: (var(--stormblue));
-//                 text-decoration: none;
-//                 background-color: (var(--iceblue));
-//                 display: inline-block;
-//                 transition: 0.25s;
-//                 text-align: right;
-                
-//                 &:hover,
-//                 &:active {
-//                     color: (var(--flower));
-//                 }
-//             }
-
-//         }
-
-//         #subscribe{
-//             grid-template-columns: 70% auto;
-//             padding: 16px;
-//             grid-area: subscribe;
-//             scroll-margin-top: 200px;
-
-//             a:link, a:visited {
-
-//                 color: (var(--iceblue));
-//                 text-decoration: none;
-//                 font-size: 16px;
-//                 font-weight: bold;
-//                 padding: 16px;
-//                 background-color: (var(--flower));
-//                 display: inline-block;
-//                 transition: 0.25s;
-//                 text-align: right;
-//                 border-radius: 0;
-                
-//                 &:hover,
-//                 &:active {
-//                     background-color: (var(--lightflower));
-//                     padding: 20px;
-//                 }
-//             }   
-
-//         }
-//         #social{
-//             grid-template-columns: 70% auto;
-//             padding: 16px;
-//             grid-area: social;
-//             ul{
-//                 display: flex;
-//                 gap: 24px;
-
-//                 a:link, a:visited {
-
-//                     color: (var(--iceblue));
-//                     text-decoration: none;
-//                     padding: 10px;
-//                     display: inline-block;
-//                     transition: 0.15s;
-//                     text-align: right;
-                    
-//                     &:hover,
-//                     &:active {
-//                         background-color: (var(--flower));
-//                         color: (var(--flower));
-//                         border-radius: 20%;
-//                         padding: 16px;
-//                     }
-//                 }   
-//             }
-//         }
-
-//         #copyright{
-//             // grid-template-columns: 70% auto;
-//             padding: 16px;
-//             grid-area: copyright;
-//         }
-
-        
 
 
-//         @include md{
-//             display: grid;
-//             grid-template-columns: repeat (2, 1fr);
-//             grid-template-rows: 30% auto;
-//             grid-template-areas:
-//             "address subscribe"
-//             " . social"
-//             "copyright .";
-//         }
-//         @include lg{
-//                 display: grid;
-//                 grid-template-columns: repeat (3, 1fr);
-//                 grid-template-areas:
-//                 "address subscribe social"
-//                 "copyright . .";
-
-//         }
-//     }  
-// }
 

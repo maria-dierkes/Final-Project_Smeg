@@ -391,8 +391,83 @@ section div {
 /* =============
     Footer
 ============= */
-section div {
-  background-color: bisque;
+footer {
+  background-color: var(--darkgrayblue);
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+footer div {
+  grid-area: footer;
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--stormblue);
+}
+footer div input {
+  border: none;
+  background-color: var(--stormblue);
+  color: var(--iceblue);
+  padding: 16px 24px;
+  width: 287px;
+}
+footer div button {
+  background-color: var(--flower);
+  color: var(--iceblue);
+  border: none;
+  padding: 16px 24px;
+}
+footer div #address {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: address;
+}
+footer div #subscribe {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: subscribe;
+  scroll-margin-top: 200px;
+}
+footer div #subscribe a:link, footer div #subscribe a:visited {
+  color: var(--iceblue);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px;
+  background-color: var(--flower);
+  display: inline-block;
+  transition: 0.25s;
+  text-align: right;
+  border-radius: 0;
+}
+footer div #subscribe a:link:hover, footer div #subscribe a:link:active, footer div #subscribe a:visited:hover, footer div #subscribe a:visited:active {
+  background-color: var(--lightflower);
+  padding: 20px;
+}
+footer div #social {
+  grid-template-columns: 70% auto;
+  padding: 16px;
+  grid-area: social;
+}
+footer div #social ul {
+  display: flex;
+  gap: 24px;
+}
+footer div #social ul a:link, footer div #social ul a:visited {
+  color: var(--iceblue);
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.15s;
+  text-align: right;
+}
+footer div #social ul a:link:hover, footer div #social ul a:link:active, footer div #social ul a:visited:hover, footer div #social ul a:visited:active {
+  background-color: var(--flower);
+  color: var(--flower);
+  border-radius: 20%;
+  padding: 16px;
+}
+footer div #copyright {
+  padding: 16px;
+  grid-area: copyright;
 }
 
 /* =============
