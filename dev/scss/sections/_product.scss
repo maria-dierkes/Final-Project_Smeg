@@ -5,18 +5,87 @@
 
 #product{
 
-    padding-top: 24px;
+    scroll-margin-top: 170px;
+    padding-top: 20px;
 
     div{
-       scroll-margin-top: 170px;
-       margin-top: 20px;
+    
+        margin-top: 20px;
         margin-bottom: 20px;
+        padding: 40px;
 
         background-color: black;
         color: var(--title);
 
-        font-family: 'Poppins', 'Regular', 'Sans-serif';
-        color: var(--titlewhite); 
+
+
+        .swatches{
+            display: inline-block;
+
+        }
+
+        ul{
+
+
+            @include md{
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "p1 p2 p3"
+            }
+            #p1{
+                @include md{
+                    grid-area: p1;  
+                }
+
+                border: 1px solid transparent;
+                border-image: linear-gradient(to bottom, #647F95, black);
+                border-image-slice: 1;
+                padding: 15px;
+            
+            }
+            #p2{
+                @include md{
+                    grid-area: p2;  
+                }
+                border: 1px solid transparent;
+                border-image: linear-gradient(to bottom, #647F95, black);
+                border-image-slice: 1;
+                padding: 15px;
+            
+            }
+            #p3{
+                @include md{
+                    grid-area: p3;  
+                }
+                border: 1px solid transparent;
+                border-image: linear-gradient(to bottom, #647F95, black);
+                border-image-slice: 1;
+                padding: 15px;
+    
+            }
+        }
+
+        a:link, a:visited {
+
+            color: (var(--darkgrayblue));
+            text-decoration: none;
+            font-size: 16px;
+            padding: 16px;
+            border: 1px solid var(--darkgrayblue);
+            display: inline-block;
+            transition: 0.25s;
+            text-align: right;
+            border-radius: 30px;
+            
+            &:hover,
+            &:active {
+                background-color: (var(--darkgrayblue));
+                color: (var(--title));
+                padding: 20px;
+            }
+        }
     }
 
     

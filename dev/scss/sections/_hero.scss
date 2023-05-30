@@ -6,8 +6,7 @@
 
     background-color: black;
     color: var(--title);
-
-    padding: 20px;
+    padding-bottom: 20px;
 
 
 
@@ -16,16 +15,22 @@
         }
         div{
             .discription{
-            padding-top: 20px;
-            font-family: 'Poppins', 'Regular', 'Sans-serif';
+                padding-top: 20px;
+                padding-bottom: 20px;
 
-            display: inline-block;
-            text-align: center;  
-            
-            border: 1px solid transparent;
-            border-image: linear-gradient(to bottom, #647F95, black);
-            border-image-slice: 1;
-            padding: 15px;
+                font-family: 'Poppins', 'Regular', 'Sans-serif';
+                
+                
+                display: flex;
+                text-align: center;  
+                justify-content: center;
+                align-items: center;
+
+                
+                border: 1px solid transparent;
+                border-image: linear-gradient(to bottom, #647F95, black);
+                border-image-slice: 1;
+                padding: 15px;
 
             }
                 

@@ -12,20 +12,19 @@ html{
 }
 
 nav{
-
+    position: absolute;
     display: none;
+    padding-top: 20px;
     // text-align: right;
 
-    
-
-    @include lg{
+    @include md{
         display: block;
     }
 
     ul{
         position: center;
 
-        @include lg{
+        @include md{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,11 +32,9 @@ nav{
 
 
         li{
-            display: inline-block;
-            text-align: center;
 
-            @include lg{
-                margin-left: 5px;
+            @include md{
+                padding: 5px;
             }
 
 
@@ -45,19 +42,18 @@ nav{
                 display: inline-block;
                 color: var(--darkgrayblue);
                 font-family: 'Poppins', 'Regular', 'Sans-serif';
-                font-size: 26px;
-                padding: 16px 16px;
+                font-size: 14px;
+                padding: 5px 5px;
                 
-                @include lg{
-                    padding: 24px 26px;
+                @include md{
+                    padding: 16px 16px;
                     transition: 0.25s;
                     border-radius: 6px;
-                    padding: 24px 36px;
 
                 }
 
                 &:hover, &:active{
-                    @include lg{
+                    @include md{
                         color: var(--darkgrey)  
                     }
                     

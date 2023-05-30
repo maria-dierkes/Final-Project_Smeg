@@ -357,9 +357,107 @@ ul li {
 /* =============
     Typography
 ============= */
-section {
+header {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+
+#hero {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+
+#features {
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--title);
+}
+#features h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+#features h2 {
+  font-weight: lighter;
+}
+#features p {
+  font-weight: lighter;
+  font-size: small;
+}
+
+#accessories {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+#accessories h1 {
+  color: var(--titlewhite);
+  font-size: 30px;
+  font-weight: bold;
+}
+#accessories h2, #accessories p {
+  color: var(--darkgrayblue);
+}
+#accessories p {
+  font-weight: lighter;
+  font-size: small;
+}
+
+#product {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+#product h1 {
+  color: var(--titlewhite);
+  font-size: 30px;
+}
+#product h2 {
+  color: var(--offwhite);
+  font-weight: bold;
+}
+#product h3, #product h4 {
+  color: var(--offwhite);
+  font-weight: lighter;
+}
+
+#reviews {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+#reviews h1, #reviews h2, #reviews h3 {
+  color: var(--titlewhite);
+  font-weight: bolder;
+}
+#reviews h4 {
+  color: var(--titlewhite);
+  font-weight: lighter;
+}
+#reviews .verified {
+  color: var(--darkgrayblue);
+  font-weight: lighter;
+}
+#reviews p {
+  color: var(--darkgrey);
+  font-weight: lighter;
+}
+
+#gallery {
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--title);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#search {
   font-family: "Poppins", "Regular", "Sans-serif";
   color: var(--titlewhite);
+}
+
+footer {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+footer .title {
+  color: var(--white);
+  font-weight: bolder;
+}
+footer .items {
+  color: var(--offwhite);
+  font-weight: lighter;
+}
+footer h2 {
+  color: var(--offwhite);
 }
 
 /* =============
@@ -395,9 +493,11 @@ html {
 }
 
 nav {
+  position: absolute;
   display: none;
+  padding-top: 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   nav {
     display: block;
   }
@@ -405,38 +505,33 @@ nav {
 nav ul {
   position: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-nav ul li {
-  display: inline-block;
-  text-align: center;
-}
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   nav ul li {
-    margin-left: 5px;
+    padding: 5px;
   }
 }
 nav ul li a:link, nav ul li a:visited {
   display: inline-block;
   color: var(--darkgrayblue);
   font-family: "Poppins", "Regular", "Sans-serif";
-  font-size: 26px;
-  padding: 16px 16px;
+  font-size: 14px;
+  padding: 5px 5px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   nav ul li a:link, nav ul li a:visited {
-    padding: 24px 26px;
+    padding: 16px 16px;
     transition: 0.25s;
     border-radius: 6px;
-    padding: 24px 36px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
     color: var(--darkgrey);
   }
@@ -446,45 +541,54 @@ nav ul li a:link, nav ul li a:visited {
     Header
 ============= */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: grid;
   width: 100%;
+  box-shadow: 0px 5px 7px rgba(42, 48, 54, 0.3);
   box-sizing: border-box;
 }
-header div {
-  color: var(--flower);
-  background-color: var(--iceblue);
+@media (min-width: 576px) {
+  header #logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  header #logo img {
+    width: 90%;
+  }
 }
-header div #burger-btn {
+header .burger-menu {
   grid-area: burger-btn;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: right;
   padding: 20px;
   border: none;
-  color: var(--flower);
-  background-color: var(--iceblue);
+  color: var(--title);
+  background-color: var(--darkgrayblue);
   padding-left: 26px;
   font-size: 1.25rem;
 }
-header div #main-menu {
+@media (min-width: 768px) {
+  header .burger-menu {
+    display: none;
+  }
+}
+header .menu {
   display: none;
 }
-header div nav {
+@media (min-width: 768px) {
+  header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header #main-menu {
   grid-area: nav;
   padding-top: 10px;
-}
-header div a:link, header div a:visited {
-  text-decoration: none;
-  padding: 16px;
-  transition: 0.25s;
-  color: var(--flower);
-}
-header div a:link:hover, header div a:link:active, header div a:visited:hover, header div a:visited:active {
-  color: var(--stormblue);
-  padding: 20px;
 }
 
 /* =============
@@ -575,16 +679,19 @@ footer div #copyright {
 #hero {
   background-color: black;
   color: var(--title);
-  padding: 20px;
+  padding-bottom: 20px;
 }
 #hero img {
   width: 100%;
 }
 #hero div .discription {
   padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Poppins", "Regular", "Sans-serif";
-  display: inline-block;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, #647F95, black);
   border-image-slice: 1;
@@ -615,6 +722,7 @@ footer div #copyright {
     features
 ============= */
 #features {
+  scroll-margin-top: 170px;
   background-color: black;
   padding: 20px;
   display: flex;
@@ -645,17 +753,18 @@ footer div #copyright {
     accessories
 ============= */
 #accessories {
+  scroll-margin-top: 170px;
   background-color: white;
 }
 #accessories div {
   grid-area: explore;
   padding: 24px;
   background-color: white;
-  font-family: "Poppins", "Regular", "Sans-serif";
   text-align: center;
 }
 #accessories div img {
   width: 100%;
+  height: 75%;
 }
 #accessories div #accesswrite {
   padding: 0 60px 0;
@@ -666,27 +775,106 @@ footer div #copyright {
   border-image-slice: 2;
   padding: 15px;
 }
+@media (min-width: 768px) {
+  #accessories div ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a1 a2";
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  #accessories div ul #a1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  #accessories div ul #a2 {
+    grid-area: a2;
+  }
+}
 
 /* =============
     product
 ============= */
 #product {
-  padding-top: 24px;
+  scroll-margin-top: 170px;
+  padding-top: 20px;
 }
 #product div {
-  scroll-margin-top: 170px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 40px;
   background-color: black;
   color: var(--title);
-  font-family: "Poppins", "Regular", "Sans-serif";
-  color: var(--titlewhite);
+}
+#product div .swatches {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  #product div ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "p1 p2 p3";
+  }
+}
+#product div ul #p1 {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, black);
+  border-image-slice: 1;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  #product div ul #p1 {
+    grid-area: p1;
+  }
+}
+#product div ul #p2 {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, black);
+  border-image-slice: 1;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  #product div ul #p2 {
+    grid-area: p2;
+  }
+}
+#product div ul #p3 {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, black);
+  border-image-slice: 1;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  #product div ul #p3 {
+    grid-area: p3;
+  }
+}
+#product div a:link, #product div a:visited {
+  color: var(--darkgrayblue);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid var(--darkgrayblue);
+  display: inline-block;
+  transition: 0.25s;
+  text-align: right;
+  border-radius: 30px;
+}
+#product div a:link:hover, #product div a:link:active, #product div a:visited:hover, #product div a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--title);
+  padding: 20px;
 }
 
 /* =============
     reviews
 ============= */
 #reviews {
+  scroll-margin-top: 170px;
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -696,8 +884,8 @@ footer div #copyright {
   padding: 24px;
   gap: 16px;
 }
-#reviews div img {
-  width: 100%;
+#reviews div .stars {
+  display: inline-block;
 }
 @media (min-width: 768px) {
   #reviews div ul {
@@ -740,16 +928,12 @@ footer div #copyright {
     gallery
 ============= */
 #gallery {
-  scroll-margin-top: 170px;
   background-color: black;
   margin-top: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 #gallery div {
   display: grid;
-  padding: 0 40px 0;
 }
 #gallery div img {
   width: 100%;
@@ -758,13 +942,12 @@ footer div #copyright {
   color: var(--darkgrayblue);
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
   padding: 16px;
   border: 1px solid var(--darkgrayblue);
   display: inline-block;
   transition: 0.25s;
   text-align: right;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 #gallery div a:link:hover, #gallery div a:link:active, #gallery div a:visited:hover, #gallery div a:visited:active {
   background-color: var(--darkgrayblue);
@@ -774,9 +957,15 @@ footer div #copyright {
 #gallery div ul {
   display: grid;
   gap: 16px;
-  padding: 40px 160px 160px;
+  align-items: center;
+  padding: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4";
+}
+@media (min-width: 768px) {
+  #gallery div ul {
+    padding: 20px 161px 20px;
+  }
 }
 #gallery div ul li {
   display: grid;

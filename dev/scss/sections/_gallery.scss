@@ -4,19 +4,15 @@
 
 #gallery{
 
-    scroll-margin-top: 170px;
-
     background-color: black;
     margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 20px;
-                
+    padding: 20px;
+    
 
     div{
         
         display: grid;
-        padding: 0 40px 0;
+        
 
         img{
             width: 100%;
@@ -27,13 +23,12 @@
             color: (var(--darkgrayblue));
             text-decoration: none;
             font-size: 16px;
-            font-weight: bold;
             padding: 16px;
             border: 1px solid var(--darkgrayblue);
             display: inline-block;
             transition: 0.25s;
             text-align: right;
-            border-radius: 20px;
+            border-radius: 30px;
             
             &:hover,
             &:active {
@@ -48,17 +43,23 @@
             
             display: grid;
             gap: 16px;
-            padding: 40px 160px 160px;
+            align-items: center;
+            padding: 20px;
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
             "g1 g1 g2 g2"
             "g3 g3 g4 g4";
+
+            @include md{
+                padding: 20px 161px 20px;
+            }
 
                 
 
             li{
                 
                 display: grid;
+                
             }
             
         #g1{

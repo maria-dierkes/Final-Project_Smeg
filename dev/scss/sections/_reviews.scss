@@ -5,6 +5,7 @@
 
 #reviews{
 
+    scroll-margin-top: 170px;
     
     background-color: white;
     margin-top: 20px;
@@ -16,8 +17,9 @@
         padding: 24px;
         gap: 16px;
 
-        img{
-            width: 100%;
+
+        .stars{
+            display: inline-block;
         }
 
         ul{
@@ -31,7 +33,7 @@
                 "r3 r4"; 
             }
             
-                
+        
 
             li{
                 
