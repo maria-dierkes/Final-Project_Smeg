@@ -7,24 +7,28 @@
     background-color: black;
     color: var(--title);
 
+    padding: 20px;
+
 
 
         img{
-            width: 50%;
+            width: 100%;
         }
         div{
-            p{
+            .discription{
+            padding-top: 20px;
+            font-family: 'Poppins', 'Regular', 'Sans-serif';
 
-                font-family: 'Poppins', 'Regular', 'Sans-serif';
-                .discription{
-                    display: flex; 
-                    justify-content: center;
-                    align-items: center;
-
-                }
+            display: inline-block;
+            text-align: center;  
             
+            border: 1px solid transparent;
+            border-image: linear-gradient(to bottom, #647F95, black);
+            border-image-slice: 1;
+            padding: 15px;
 
             }
+                
         }
             
 }

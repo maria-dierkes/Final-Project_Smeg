@@ -4,22 +4,51 @@
 
 #gallery{
 
+    scroll-margin-top: 170px;
+
     background-color: black;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
                 
 
     div{
         
         display: grid;
-        padding: 24px;
+        padding: 0 40px 0;
 
         img{
             width: 100%;
         }
 
+        a:link, a:visited {
+
+            color: (var(--darkgrayblue));
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 16px;
+            border: 1px solid var(--darkgrayblue);
+            display: inline-block;
+            transition: 0.25s;
+            text-align: right;
+            border-radius: 20px;
+            
+            &:hover,
+            &:active {
+                background-color: (var(--darkgrayblue));
+                color: (var(--title));
+                padding: 20px;
+            }
+        }
+            
+
         ul{
             
             display: grid;
             gap: 16px;
+            padding: 40px 160px 160px;
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas: 
             "g1 g1 g2 g2"
@@ -30,7 +59,6 @@
             li{
                 
                 display: grid;
-                grid-area: gallery;
             }
             
         #g1{

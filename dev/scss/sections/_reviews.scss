@@ -8,11 +8,13 @@
     
     background-color: white;
     margin-top: 20px;
+    margin-bottom: 20px;
 
     div{
         
         display: grid;
         padding: 24px;
+        gap: 16px;
 
         img{
             width: 100%;
@@ -20,36 +22,53 @@
 
         ul{
             
-            display: grid;
-            gap: 16px;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            "r1 r1 r2 r2"
-            "r3 r3 r4 r4";
+            @include md{
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "r1 r2"
+                "r3 r4"; 
+            }
+            
                 
 
             li{
                 
                 display: grid;
                 grid-area: reviews;
-                border: 1px solid var(--darkgrayblue);
-                padding: 20px;
+                // border: 1px solid var(--darkgrayblue);
+                border: 1px solid transparent;
+                border-image: linear-gradient(to bottom, #647F95, white);
+                border-image-slice: 1;
+                padding: 15px;
 
             }
             
         #r1{
-            grid-area: r1;
+            @include md{
+                grid-area: r1;  
+            }
         
         }
         #r2{
-            grid-area: r2;
+            @include md{
+                grid-area: r2;  
+            }
+        
         }
         #r3{
-            grid-area: r3;
+            @include md{
+                grid-area: r3;  
+            }
+        
 
         }
         #r4{
-            grid-area: r4;
+            @include md{
+                grid-area: r4;  
+            }
+        
         }
 
         }

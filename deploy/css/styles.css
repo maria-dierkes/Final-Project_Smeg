@@ -354,13 +354,6 @@ ul li {
   list-style: none;
 }
 
-.discription {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 /* =============
     Typography
 ============= */
@@ -582,17 +575,20 @@ footer div #copyright {
 #hero {
   background-color: black;
   color: var(--title);
+  padding: 20px;
 }
 #hero img {
-  width: 50%;
+  width: 100%;
 }
-#hero div p {
+#hero div .discription {
+  padding-top: 20px;
   font-family: "Poppins", "Regular", "Sans-serif";
-}
-#hero div p .discription {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, black);
+  border-image-slice: 1;
+  padding: 15px;
 }
 
 /* =============
@@ -601,6 +597,7 @@ footer div #copyright {
 #search {
   scroll-margin-top: 170px;
   background-color: black;
+  padding: 40px;
 }
 #search div {
   display: flex;
@@ -619,6 +616,26 @@ footer div #copyright {
 ============= */
 #features {
   background-color: black;
+  padding: 20px;
+  display: flex;
+}
+#features div #featurepara1 {
+  text-align: left;
+  padding-right: 251px;
+  padding-left: 24px;
+}
+#features div #featurepara2 {
+  text-align: left;
+  padding-left: 251px;
+  padding-right: 24px;
+}
+#features div #toaster1 .toasterimage1 {
+  display: flex;
+  justify-content: flex-end;
+}
+#features div #toaster1 .backgroundcircle {
+  display: flex;
+  justify-content: flex-end;
 }
 #features div ul li {
   list-style: none;
@@ -635,15 +652,27 @@ footer div #copyright {
   padding: 24px;
   background-color: white;
   font-family: "Poppins", "Regular", "Sans-serif";
+  text-align: center;
 }
 #accessories div img {
   width: 100%;
-  height: 50% auto;
+}
+#accessories div #accesswrite {
+  padding: 0 60px 0;
+}
+#accessories div ul li {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, white);
+  border-image-slice: 2;
+  padding: 15px;
 }
 
 /* =============
     product
 ============= */
+#product {
+  padding-top: 24px;
+}
 #product div {
   scroll-margin-top: 170px;
   margin-top: 20px;
@@ -660,61 +689,97 @@ footer div #copyright {
 #reviews {
   background-color: white;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 #reviews div {
   display: grid;
   padding: 24px;
+  gap: 16px;
 }
 #reviews div img {
   width: 100%;
 }
-#reviews div ul {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "r1 r1 r2 r2" "r3 r3 r4 r4";
+@media (min-width: 768px) {
+  #reviews div ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "r1 r2" "r3 r4";
+  }
 }
 #reviews div ul li {
   display: grid;
   grid-area: reviews;
-  border: 1px solid var(--darkgrayblue);
-  padding: 20px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, white);
+  border-image-slice: 1;
+  padding: 15px;
 }
-#reviews div ul #r1 {
-  grid-area: r1;
+@media (min-width: 768px) {
+  #reviews div ul #r1 {
+    grid-area: r1;
+  }
 }
-#reviews div ul #r2 {
-  grid-area: r2;
+@media (min-width: 768px) {
+  #reviews div ul #r2 {
+    grid-area: r2;
+  }
 }
-#reviews div ul #r3 {
-  grid-area: r3;
+@media (min-width: 768px) {
+  #reviews div ul #r3 {
+    grid-area: r3;
+  }
 }
-#reviews div ul #r4 {
-  grid-area: r4;
+@media (min-width: 768px) {
+  #reviews div ul #r4 {
+    grid-area: r4;
+  }
 }
 
 /* =============
     gallery
 ============= */
 #gallery {
+  scroll-margin-top: 170px;
   background-color: black;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 #gallery div {
   display: grid;
-  padding: 24px;
+  padding: 0 40px 0;
 }
 #gallery div img {
   width: 100%;
 }
+#gallery div a:link, #gallery div a:visited {
+  color: var(--darkgrayblue);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px;
+  border: 1px solid var(--darkgrayblue);
+  display: inline-block;
+  transition: 0.25s;
+  text-align: right;
+  border-radius: 20px;
+}
+#gallery div a:link:hover, #gallery div a:link:active, #gallery div a:visited:hover, #gallery div a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--title);
+  padding: 20px;
+}
 #gallery div ul {
   display: grid;
   gap: 16px;
+  padding: 40px 160px 160px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4";
 }
 #gallery div ul li {
   display: grid;
-  grid-area: gallery;
 }
 #gallery div ul #g1 {
   grid-area: g1;

@@ -14,10 +14,28 @@
             background-color: white;
                 
             font-family: 'Poppins', 'Regular', 'Sans-serif';
+            text-align: center;
+
             img{
                 width: 100%;
-                height: 50% auto;
             }
+            #accesswrite{
+                padding: 0 60px 0;
+            }
+            ul{
+
+                li{
+                    border: 1px solid transparent;
+                    border-image: linear-gradient(to bottom, #647F95, white);
+                    border-image-slice: 2;
+                    padding: 15px;
+
+
+                }
+            }
+            
+
+
             //         button{
             //             background-color: var(--flower);
             //             color: var(--iceblue);

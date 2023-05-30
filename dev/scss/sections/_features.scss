@@ -6,12 +6,52 @@
 
     background-color: black;
 
+    padding: 20px;
+
+    display: flex;
+
+
+   
 
 
         div{
 
-            ul{
+            #featurepara1{
+                text-align: left;
+                padding-right: 251px;
+                padding-left: 24px;
+            }
 
+            #featurepara2{
+                text-align: left;
+                padding-left: 251px;
+                padding-right: 24px;
+            }
+            
+            
+            #toaster1{
+                // display: flex;
+                // justify-content: flex-end;
+
+
+                .toasterimage1{
+                    // width: 200px; 
+                    // height: 200px;
+                    // object-fit: cover;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .backgroundcircle{
+                // margin-left: -20px;
+                display: flex;
+                justify-content: flex-end;
+                
+                }
+            }
+
+
+            ul{
                 li{
                     list-style: none;
                 }
