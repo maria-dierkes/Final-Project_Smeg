@@ -4,48 +4,47 @@
 
 
 header{
-    background-color: var(--titlewhite);
+    // background-color: var(--titlewhite);
     position: fixed;
     top: 0;
     left: 0;
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: 
-    "logo burger-btn"
-    "nav nav";
+    
+    // grid-template-columns: 25% auto 25%;
+    // grid-template-areas: 
+    // "nav logo burger-btn";
     width: 100%;
     box-sizing: border-box;
 
-    background-color: var(--iceblue);
-
     div{
         color: var(--flower);
-        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        // font-family: 'Poppins', 'Regular', 'Sans-serif';
+        // font-size: 24px;
        
         background-color: var(--iceblue);
         
         
 
-        #logo, #burger-btn {float:left; display: inline; width: 49%;}
+        // #logo, #burger-btn {float:left; display: inline; width: 49%;}
 
-    #logo{
-        grid-area: logo;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        padding-top: 20px;
-        padding-bottom: 10px;
+    // #logo{
+    //     grid-area: logo;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center; 
+    //     padding-top: 20px;
+    //     padding-bottom: 10px;
 
-        img{
-            width: 90%;
-        }
-    }
+    //     img{
+    //         width: 100%;
+    //     }
+    // }
 
-    #search{
+    #burger-btn{
         grid-area: burger-btn;
         display: flex;
         align-items: center;
-        justify-content: right;  
+        justify-content: flex-end;  
         
         padding: 20px;
 
@@ -54,9 +53,42 @@ header{
         color: var(--flower);
         background-color: var(--iceblue);
         padding-left: 26px; 
-        font-size: rem-calc(20);        
+        font-size: rem-calc(20);
+
+        // @include lg{
+        //     display: none;
+        // }
+        
 
     }
+
+    #main-menu{
+        display: none;
+        // font-family: 'Poppins', 'Regular', 'Sans-serif';
+        // font-size: large;
+       
+
+        // @include lg{
+        //     display: flex;
+        // }
+    }
+
+    // #search{
+    //     grid-area: burger-btn;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: right;  
+        
+    //     padding: 20px;
+
+    //     border: none;
+
+    //     color: var(--flower);
+    //     background-color: var(--iceblue);
+    //     padding-left: 26px; 
+    //     font-size: rem-calc(20);        
+
+    // }
 
     nav{
         grid-area: nav;
@@ -68,7 +100,7 @@ header{
     a:link, a:visited {
         text-decoration: none;
         padding: 16px;
-        display: inline-block;
+        // display: inline-block;
         transition: 0.25s;
         color: (var(--flower));
         

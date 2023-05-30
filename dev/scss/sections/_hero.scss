@@ -1,14 +1,35 @@
 /* =============
     hero
 ============= */
-section{
 
-    div{
+#hero{
+
+    background-color: black;
+    color: var(--title);
+
+
+
         img{
             width: 50%;
         }
-    }
+        div{
+            p{
+
+                font-family: 'Poppins', 'Regular', 'Sans-serif';
+                .discription{
+                    display: flex; 
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            
+
+            }
+        }
+            
 }
+
+
 
 // #heroes{
 //     scroll-margin-top: 200px;

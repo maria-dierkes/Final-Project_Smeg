@@ -1,0 +1,26 @@
+/* =============
+    search
+============= */
+
+#search{
+
+    scroll-margin-top: 170px;
+    background-color: black;
+    div{
+
+        display: flex;
+        align-items: center; 
+
+        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        
+        padding: 20px;
+
+        border: none;
+
+        color: var(--flower);
+        background-color: var(--iceblue);
+        padding-left: 26px; 
+        font-size: rem-calc(20);        
+
+    }
+}

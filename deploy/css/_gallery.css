@@ -1,0 +1,12 @@
+/* =============
+    gallery
+============= */
+#gallery section {
+  background-color: black;
+}
+#gallery section {
+  display: grid;
+}
+#gallery section div ul li {
+  display: grid;
+}

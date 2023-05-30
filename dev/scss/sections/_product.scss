@@ -3,7 +3,24 @@
 ============= */
 
 
-// #explore{
+#product{
+
+    div{
+       scroll-margin-top: 170px;
+       margin-top: 20px;
+        margin-bottom: 20px;
+
+        background-color: black;
+        color: var(--title);
+
+        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        color: var(--titlewhite); 
+    }
+
+    
+
+}
+
 
 //     scroll-margin-top: 170px;
 
@@ -159,4 +176,3 @@
 //             }
 //         }
 //     }
-// }

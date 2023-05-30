@@ -354,9 +354,21 @@ ul li {
   list-style: none;
 }
 
+.discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
+section {
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--titlewhite);
+}
+
 /* =============
     Buttons
 ============= */
@@ -381,53 +393,91 @@ textarea {
 /* =============
     Navigation
 ============= */
+.show-menu {
+  display: block !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+  }
+}
+nav ul {
+  position: center;
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-left: 5px;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  display: inline-block;
+  color: var(--darkgrayblue);
+  font-family: "Poppins", "Regular", "Sans-serif";
+  font-size: 26px;
+  padding: 16px 16px;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 24px 26px;
+    transition: 0.25s;
+    border-radius: 6px;
+    padding: 24px 36px;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    color: var(--darkgrey);
+  }
+}
+
 /* =============
     Header
 ============= */
 header {
-  background-color: var(--titlewhite);
   position: fixed;
   top: 0;
   left: 0;
   display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "logo burger-btn" "nav nav";
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--iceblue);
 }
 header div {
   color: var(--flower);
-  font-family: "Poppins", "Regular", "Sans-serif";
   background-color: var(--iceblue);
 }
-header div #logo, header div #burger-btn {
-  float: left;
-  display: inline;
-  width: 49%;
-}
-header div #logo {
-  grid-area: logo;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-header div #logo img {
-  width: 90%;
-}
-header div #search {
+header div #burger-btn {
   grid-area: burger-btn;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
   padding: 20px;
   border: none;
   color: var(--flower);
   background-color: var(--iceblue);
   padding-left: 26px;
   font-size: 1.25rem;
+}
+header div #main-menu {
+  display: none;
 }
 header div nav {
   grid-area: nav;
@@ -436,7 +486,6 @@ header div nav {
 header div a:link, header div a:visited {
   text-decoration: none;
   padding: 16px;
-  display: inline-block;
   transition: 0.25s;
   color: var(--flower);
 }
@@ -530,13 +579,152 @@ footer div #copyright {
 /* =============
     hero
 ============= */
-section div img {
+#hero {
+  background-color: black;
+  color: var(--title);
+}
+#hero img {
   width: 50%;
+}
+#hero div p {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+#hero div p .discription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =============
+    search
+============= */
+#search {
+  scroll-margin-top: 170px;
+  background-color: black;
+}
+#search div {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", "Regular", "Sans-serif";
+  padding: 20px;
+  border: none;
+  color: var(--flower);
+  background-color: var(--iceblue);
+  padding-left: 26px;
+  font-size: 1.25rem;
 }
 
 /* =============
     features
 ============= */
-section div ul li {
+#features {
+  background-color: black;
+}
+#features div ul li {
   list-style: none;
+}
+
+/* =============
+    accessories
+============= */
+#accessories {
+  background-color: white;
+}
+#accessories div {
+  grid-area: explore;
+  padding: 24px;
+  background-color: white;
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+#accessories div img {
+  width: 100%;
+  height: 50% auto;
+}
+
+/* =============
+    product
+============= */
+#product div {
+  scroll-margin-top: 170px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: var(--title);
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--titlewhite);
+}
+
+/* =============
+    reviews
+============= */
+#reviews {
+  background-color: white;
+  margin-top: 20px;
+}
+#reviews div {
+  display: grid;
+  padding: 24px;
+}
+#reviews div img {
+  width: 100%;
+}
+#reviews div ul {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "r1 r1 r2 r2" "r3 r3 r4 r4";
+}
+#reviews div ul li {
+  display: grid;
+  grid-area: reviews;
+  border: 1px solid var(--darkgrayblue);
+  padding: 20px;
+}
+#reviews div ul #r1 {
+  grid-area: r1;
+}
+#reviews div ul #r2 {
+  grid-area: r2;
+}
+#reviews div ul #r3 {
+  grid-area: r3;
+}
+#reviews div ul #r4 {
+  grid-area: r4;
+}
+
+/* =============
+    gallery
+============= */
+#gallery {
+  background-color: black;
+}
+#gallery div {
+  display: grid;
+  padding: 24px;
+}
+#gallery div img {
+  width: 100%;
+}
+#gallery div ul {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4";
+}
+#gallery div ul li {
+  display: grid;
+  grid-area: gallery;
+}
+#gallery div ul #g1 {
+  grid-area: g1;
+}
+#gallery div ul #g2 {
+  grid-area: g2;
+}
+#gallery div ul #g3 {
+  grid-area: g3;
+}
+#gallery div ul #g4 {
+  grid-area: g4;
 }

@@ -2,20 +2,59 @@
     gallery
 ============= */
 
-section{
-    display: grid;
+#gallery{
+
+    background-color: black;
+                
 
     div{
+        
+        display: grid;
+        padding: 24px;
+
+        img{
+            width: 100%;
+        }
 
         ul{
+            
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "g1 g1 g2 g2"
+            "g3 g3 g4 g4";
+
+                
 
             li{
-                    display: grid; 
-
+                
+                display: grid;
+                grid-area: gallery;
             }
+            
+        #g1{
+            grid-area: g1;
+        
         }
+        #g2{
+            grid-area: g2;
+        }
+        #g3{
+            grid-area: g3;
+
+        }
+        #g4{
+            grid-area: g4;
+        }
+
+        }
+
+        
     }
 }
+
+
 
 
 // #explore{
@@ -62,22 +101,11 @@ section{
 //             @include md{
 //                 display: grid;
 //                 gap: 16px;
-//                 grid-template-columns: repeat(4, 1fr);
+//                 grid-template-columns: repeat(2, 1fr);
 //                 grid-template-areas: 
-//                 "e1 e1 e2 e2"
-//                 "e3 e3 e4 e4"
-//                 ". e5 e5 .";
+//                 "g1 g2"
+//                 "g3 g4";
 //             }
-
-//             @include lg{
-//                 display: grid;
-//                 gap: 16px;
-//                 grid-template-columns: repeat(6, 1fr);
-//                 grid-template-areas: 
-//                 "e1 e1 e2 e2 e3 e3"
-//                 ". e4 e4 e5 e5 .";
-//             }  
-
 
 //             .description{
 //                 height: 100%;
@@ -142,36 +170,31 @@ section{
 //             }
 
 
-//             #e1{
+//             #g1{
 //                 @include md{
-//                     grid-area: e1;
+//                     grid-area: g1;
                     
 //                 }
 //             }
-//             #e2{
+//             #g2{
 //                 @include md{
-//                     grid-area: e2;
+//                     grid-area: g2;
                     
 //                 }
 //             }
-//             #e3{
+//             #g3{
 //                 @include md{
-//                     grid-area: e3;
+//                     grid-area: g3;
                         
 //                 }
 //             }
-//             #e4{
+//             #g4{
 //                 @include md{
-//                     grid-area: e4;
+//                     grid-area: g4;
                     
 //                 }
 //             }
-//             #e5{
-//                 @include md{
-//                     grid-area: e5;
-
-//                 }
-//             }
+//             
 //         }
 //     }
 // }
