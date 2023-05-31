@@ -13,18 +13,39 @@
 
     div{
         
-        display: grid;
         padding: 24px;
         gap: 16px;
-
 
         .stars{
             display: inline-block;
         }
 
         ul{
-            
-            @include md{
+
+            .profile{
+                
+                a:link, a:visited {
+                    color: (var(--darkgrayblue));
+                    padding: 16px;
+                    border: 1px solid var(--darkgrayblue);
+                    transition: 0.25s;
+                    border-radius: 50%;
+                    
+                    &:hover,
+                    &:active {
+                        background-color: (var(--darkgrayblue));
+                        color: (var(--title));
+                        padding: 20px;
+                    }
+                }
+            }
+
+
+            // .profile, .username {float:left; display: inline; width: 49%;}
+            // .stars, h3 {float:left; display: inline; width: 49%;}
+            // .colortoaster, .verified {float:left; display: inline; width: 49%;}
+
+            @include lg{
                 display: grid;
                 gap: 16px;
                 grid-template-columns: repeat(2, 1fr);
@@ -37,8 +58,6 @@
 
             li{
                 
-                display: grid;
-                grid-area: reviews;
                 // border: 1px solid var(--darkgrayblue);
                 border: 1px solid transparent;
                 border-image: linear-gradient(to bottom, #647F95, white);
@@ -46,28 +65,29 @@
                 padding: 15px;
 
             }
+        
             
         #r1{
-            @include md{
+            @include lg{
                 grid-area: r1;  
             }
         
         }
         #r2{
-            @include md{
+            @include lg{
                 grid-area: r2;  
             }
         
         }
         #r3{
-            @include md{
+            @include lg{
                 grid-area: r3;  
             }
         
 
         }
         #r4{
-            @include md{
+            @include lg{
                 grid-area: r4;  
             }
         
@@ -233,4 +253,39 @@
 //             }
 //         }
 //     }
+
+
+
+// display: grid;
+//             gap: 16px;
+//             grid-template-columns: repeat(2, 1fr);
+//             grid-template-areas: 
+//             " profile username"
+//             "stars note"
+//             "colortoaster verified";
+
+//         .username{
+//             grid-area: username;
+        
+//         }
+//         .stars{
+//             grid-area: stars;
+        
+//         }
+//         .profile{
+//             grid-area: profile;
+        
+//         }
+//         .note{
+//             grid-area: note;
+        
+//         }
+//         .colortoaster{
+//             grid-area: colortoaster;
+        
+//         }
+//         .verified{
+//             grid-area: verified;
+        
+//         }
 }

@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e69246ed61.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>Smeg Toasters</title>
 </head>
 <!--Header-->
 <header>
-    <!-- <section id="logo">
+    <section id="logo-nav">
         <div>
             <ul>
-                <li>
+                <li id="logo-container">
                    <a><img src="img/global/logo.svg" alt="company logo"></a> 
-                </li> -->
-                <!-- <li>
-                    <a href="#"><i class="fa-solid fa-bars fa-4x"></i></a>
+                </li>
+                <li id="burger-container">
+                    <button>
+                        <a href="#"><i class="fa-solid fa-bars fa-4x"></i></a>
+                    </button>
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
 
     <nav id="main-menu">
@@ -34,9 +37,9 @@
             <li>
                 <a href="#product">Product</a>
             </li>
-            <li id="logo">
+            <!-- <li>
                 <a href="index.html"><img src="img/global/logo.svg" alt="company logo"></a>
-            </li>
+            </li> -->
             <li>
                 <a href="#reviews">Reviews</a>
             </li>
@@ -48,9 +51,9 @@
             </li>
         </ul>
 
-        <div class="burger-menu">
+        <!-- <div class="burger-menu">
             <a href="#"><i class="fa-solid fa-bars fa-4x"></i></a>
-        </div>
+        </div> -->
     </nav>
 
 </header>
@@ -92,7 +95,7 @@
                     <h1 class="title">Technical Features</h1>
                     <ul>
                         <li id="toaster1"> 
-                            <img src="img/global/circle.svg" alt="background circle" class="backgroundcircle">
+                            <!-- <img src="img/global/circle.svg" alt="background circle" class="backgroundcircle"> -->
                             <img src="img/elements/toaster1.svg" alt="toaster image1" class="toasterimage1">
                             <section id="featurepara1">
                                 <h2>Crumb Tray</h2>
@@ -100,7 +103,7 @@
                             </section> 
                         </li>
                         <li id="toaster2"> 
-                            <img src="img/global/wholecircle.svg" alt="background whole circle" class="backgroundcircle3">
+                            <!-- <img src="img/global/wholecircle.svg" alt="background whole circle" class="backgroundcircle3"> -->
                             <img src="img/elements/toaster2.svg" alt="toaster image2" class="toasterimage2">
                             <section id="featurepara1">
                                <h2>Multi-function <br/>Backlit buttons</h2>
@@ -112,7 +115,7 @@
                                 <h2>Sliding Leaver</h2>
                                 <p>There is an easy-to-slide lever in the front of the toaster so user can push down bread with ease.</p>
                             </section>
-                            <img src="img/global/partialcircle.svg" alt="background partial circle" class="backgroundcircle3">  
+                            <!-- <img src="img/global/partialcircle.svg" alt="background partial circle" class="backgroundcircle3">   -->
                             <img src="img/elements/toaster3.svg" alt="toaster image3" class="toasterimage3">
                     </li>
                         <li> 
@@ -154,8 +157,10 @@
                             <h1 class="title">Product</h1>
                             <ul>
                                 <li id="p1">
-                                    <img src="img/elements/product1.jpg" alt="product 1">
-                                    <section>
+                                    <section class="productimage">
+                                        <img src="img/elements/product1.jpg" alt="product 1">
+                                    </section>
+                                    <section class="type">
                                         <h2>Two Slice, Two Slot</h2>
                                         <h3>$180.00</h3>
                                         <h4>Color:</h4>
@@ -163,27 +168,46 @@
                                     <section class="swatches">
                                         <ul>
                                             <li>
-                                                <img src="img/global/colors/bluecircle.svg" alt="blue circle swatch">
+                                                <button id="s1">
+                                                  <a href="#"><img src="img/global/colors/bluecircle.svg" alt="blue circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/pinkcircle.svg" alt="pink circle swatch">
+                                                <button id="s2">
+                                                    <a href="#"><img src="img/global/colors/pinkcircle.svg" alt="pink circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/redcircle.svg" alt="red circle swatch">
+                                                <button id="s3">
+                                                    <a href="#"><img src="img/global/colors/redcircle.svg" alt="red circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/greencircle.svg" alt="green circle swatch">
+                                                <button id="s4">
+                                                    <a href="#"><img src="img/global/colors/greencircle.svg" alt="green circle swatch"></a> 
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/goldcircle.svg" alt="gold circle swatch">
+                                                <button id="s5">
+                                                    <a href="#"><img src="img/global/colors/goldcircle.svg" alt="gold circle swatch"></a> 
+                                                </button>
+                                                
                                             </li>
                                         </ul>
                                     </section>
-                                    <a href="checkout.html">BUY NOW</a>
+                                    <button class="buynow">
+                                        <a href="checkout.html">BUY NOW</a>
+                                    </button>
                                 </li>
                                 <li id="p2">
-                                    <img src="img/elements/product2.jpg" alt="product 2">
-                                    <section>
+                                    <section class="productimage">
+                                        <img src="img/elements/product2.jpg" alt="product 2">
+                                    </section>
+                                    <section class="type">
                                         <h2>Four Slice, Two Slot</h2>
                                         <h3>$220.00</h3>
                                         <h4>Color:</h4>
@@ -191,27 +215,46 @@
                                     <section class="swatches">
                                         <ul>
                                             <li>
-                                                <img src="img/global/colors/bluecircle.svg" alt="blue circle swatch">
+                                                <button>
+                                                  <a href="#"><img src="img/global/colors/bluecircle.svg" alt="blue circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/pinkcircle.svg" alt="pink circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/pinkcircle.svg" alt="pink circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/redcircle.svg" alt="red circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/redcircle.svg" alt="red circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/greencircle.svg" alt="green circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/greencircle.svg" alt="green circle swatch"></a> 
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/goldcircle.svg" alt="gold circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/goldcircle.svg" alt="gold circle swatch"></a> 
+                                                </button>
+                                                
                                             </li>
                                         </ul>
                                     </section>
-                                    <a href="checkout.html">BUY NOW</a>
+                                    <button class="buynow">
+                                        <a href="checkout.html">BUY NOW</a>
+                                    </button>
                                 </li>
                                 <li id="p3">
-                                    <img src="img/elements/product3.jpg" alt="product 3">
-                                    <section>
+                                    <section class="productimage">
+                                        <img src="img/elements/product3.jpg" alt="product 3">
+                                    </section>
+                                    <section class="type">
                                         <h2>Four Slice, Four Slot</h2>
                                         <h3>$240.00</h3>
                                         <h4>Color:</h4>
@@ -219,23 +262,40 @@
                                     <section class="swatches">
                                         <ul>
                                             <li>
-                                                <img src="img/global/colors/bluecircle.svg" alt="blue circle swatch">
+                                                <button>
+                                                  <a href="#"><img src="img/global/colors/bluecircle.svg" alt="blue circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/pinkcircle.svg" alt="pink circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/pinkcircle.svg" alt="pink circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/redcircle.svg" alt="red circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/redcircle.svg" alt="red circle swatch"></a>
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/greencircle.svg" alt="green circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/greencircle.svg" alt="green circle swatch"></a> 
+                                                </button>
+                                                
                                             </li>
                                             <li>
-                                                <img src="img/global/colors/goldcircle.svg" alt="gold circle swatch">
+                                                <button>
+                                                    <a href="#"><img src="img/global/colors/goldcircle.svg" alt="gold circle swatch"></a> 
+                                                </button>
+                                                
                                             </li>
                                         </ul>
                                     </section>
-                                    <a href="checkout.html">BUY NOW</a>
+                                    <button class="buynow">
+                                        <a href="checkout.html">BUY NOW</a>
+                                    </button>
                                 </li>
                             </ul>
                         </div>
@@ -248,6 +308,10 @@
                         
                                 <ul>
                                     <li id="r1">
+                                        <section class="profile">
+                                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                                        </section>
+                                        <h2 class="username">thecannon.thebomb</h2>
                                         <section class="stars">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
@@ -255,15 +319,17 @@
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-1.svg" alt="review circle whole">
                                         </section>
-                                        <a href="#"><i class="fa-solid fa-user"></i></a>
-                                        <h2>thecannon.thebomb</h2>
-                                        <h3>met expections</h3>
+                                        <h3 class="note">met expections</h3>
                                         <h4>December 18, 2018</h4>
-                                        <h4>Color: Pastel Blue | 
+                                        <h4 class="colortoaster">Color: Pastel Blue | 
                                         <h4 class="verified">Verfied Purchase</h4>
                                         <p>Yes this is worth cost of admission if you care about kitchen styling. If you are utilitarian and only want the product to function daily, this may be too expensive for your use.</p>
                                     </li>
                                     <li id="r2">
+                                        <section class="profile">
+                                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                                        </section>
+                                        <h2 class="username">ilovetoasters.123</h2>
                                         <section class="stars">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
@@ -271,15 +337,18 @@
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                         </section>
-                                        <i class="fa-solid fa-user"></i>
-                                        <h2>ilovetoasters.123</h2>
-                                        <h3>Devine Toaster!</h3>
+                                        
+                                        <h3 class="note">Devine Toaster!</h3>
                                         <h4>May 15, 2020</h4>
-                                        <h4>Color: Pastel Pink | </h4>
+                                        <h4 class="colortoaster">Color: Pastel Pink | </h4>
                                         <h4 class="verified">Verfied Purchase</h4>
                                         <p>As beautiful as expected! Though pricy, the quality is what you pay for. It comes with good presentation and packaging. Also, it is bigger than I expected!</p>
                                     </li>
                                     <li id="r3">
+                                        <section class="profile">
+                                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                                        </section>
+                                        <h2 class="username">stylishtoaster.4ever</h2>
                                         <section class="stars">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
@@ -287,15 +356,18 @@
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                         </section>
-                                        <i class="fa-solid fa-user"></i>
-                                        <h2>stylishtoaster.4ever</h2>
-                                        <h3>works great</h3>
+                                        
+                                        <h3 class="note">works great</h3>
                                         <h4>January 15, 2023</h4>
-                                        <h4>Color: Pastel Green | 
+                                        <h4 class="colortoaster">Color: Pastel Green | 
                                         <h4 class="verified">Verfied Purchase</h4>
                                         <p>works great :)</p>
                                     </li>
                                     <li id="r4">
+                                        <section class="profile">
+                                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                                        </section>
+                                        <h2 class="username">Gregdoesnotlikethistoaster.456</h2>
                                         <section class="stars">
                                             <img src="img/global/reviewcircle-2.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-3.svg" alt="review circle whole">
@@ -303,11 +375,10 @@
                                             <img src="img/global/reviewcircle-3.svg" alt="review circle whole">
                                             <img src="img/global/reviewcircle-3.svg" alt="review circle whole">
                                         </section>
-                                        <i class="fa-solid fa-user"></i>
-                                        <h2>Gregdoesnotlikethistoaster.456</h2>
-                                        <h3>DO. NOT. BUY. No kidding.</h3>
+                                        
+                                        <h3 class="note">DO. NOT. BUY. No kidding.</h3>
                                         <h4>November 16, 2017</h4>
-                                        <h4>Color: Red | 
+                                        <h4 class="colortoaster">Color: Red | 
                                         <h4 class="verified">Verfied Purchase</h4>
                                         <p>I am on my THIRD Smeg toaster in a month because each and every one burns toast on any setting other than 1. Here is my complaint letter for the second toaster, and the last toaster that arrived has performed just as poorly as the first two. They evidently have ZERO quality control, or inspections before shipping to the consumer.</p>
                                     </li>

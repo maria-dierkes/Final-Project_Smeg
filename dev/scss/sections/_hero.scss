@@ -21,9 +21,8 @@
                 font-family: 'Poppins', 'Regular', 'Sans-serif';
                 
                 
-                display: flex;
+                display: inline-block;
                 text-align: center;  
-                justify-content: center;
                 align-items: center;
 
                 
@@ -31,6 +30,8 @@
                 border-image: linear-gradient(to bottom, #647F95, black);
                 border-image-slice: 1;
                 padding: 15px;
+
+                box-sizing: border-box;
 
             }
                 

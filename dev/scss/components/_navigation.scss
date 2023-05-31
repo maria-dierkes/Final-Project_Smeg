@@ -12,49 +12,49 @@ html{
 }
 
 nav{
-    position: absolute;
-    display: none;
-    padding-top: 20px;
-    // text-align: right;
 
-    @include md{
+    display: none;
+    text-align: right;
+
+    
+
+    @include lg{
         display: block;
     }
 
     ul{
         position: center;
-
-        @include md{
+        @include lg{
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
         }
 
 
         li{
+            display: inline-block;
+            text-align: right;
 
-            @include md{
-                padding: 5px;
+            @include lg{
+                margin-left: 16px;
             }
-
-
             a:link, a:visited{
                 display: inline-block;
                 color: var(--darkgrayblue);
-                font-family: 'Poppins', 'Regular', 'Sans-serif';
-                font-size: 14px;
-                padding: 5px 5px;
+                font-size: 20px;
+                padding: 24px 26px;
                 
-                @include md{
-                    padding: 16px 16px;
+                @include lg{
+                    padding: 24px 26px;
                     transition: 0.25s;
                     border-radius: 6px;
-
+                    padding: 24px 36px;
+                    border: 1px solid var(--darkgrayblue);
                 }
 
                 &:hover, &:active{
-                    @include md{
-                        color: var(--darkgrey)  
+                    @include lg{
+                        background-color: var(--offwhite);
                     }
                     
                 }

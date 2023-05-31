@@ -825,9 +825,9 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/deploy\/js\/scripts-min.js",
-      "oF" : 2
+      "oF" : 3
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
