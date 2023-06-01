@@ -45,11 +45,9 @@ nav{
                 padding: 24px 26px;
                 
                 @include lg{
-                    padding: 24px 26px;
+                    padding: 16px 10px;
                     transition: 0.25s;
-                    border-radius: 6px;
-                    padding: 24px 36px;
-                    border: 1px solid var(--darkgrayblue);
+                    font-size: 24px;
                 }
 
                 &:hover, &:active{

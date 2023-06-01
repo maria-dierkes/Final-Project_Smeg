@@ -25,11 +25,9 @@
                 justify-content: center;
             }
 
-
         li{
             .swatches{
 
-                display: inline-block;
 
                     // display: grid;
                     // grid-template-columns: repeat(5, 1fr);
@@ -57,7 +55,12 @@
                     display: flex;
                     justify-content: flex-start;
                     list-style-type: none;
-                    padding: 0;
+                    padding-bottom: 10px;
+                    gap: 5px;
+
+                    img{
+                        width: 90%;
+                    }
 
                     a:link, a:visited {
 
@@ -66,8 +69,7 @@
                         
                         &:hover,
                         &:active {
-                            border: 2px solid var(--offwhite);
-                            border-radius: 50%;
+                            padding: 16px;
 
                         }
                     }

@@ -41,9 +41,9 @@
             }
 
 
-            // .profile, .username {float:left; display: inline; width: 49%;}
-            // .stars, h3 {float:left; display: inline; width: 49%;}
-            // .colortoaster, .verified {float:left; display: inline; width: 49%;}
+            // .profile, .username {float:left; display: inline; width: 30%;}
+            // .stars, .note {float:left; display: inline; width: 49%;}
+            // .colortoaster, .verified {float:left; display: inline; width: 30%;}
 
             @include lg{
                 display: grid;

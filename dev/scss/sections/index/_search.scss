@@ -40,15 +40,9 @@
             border: 1px solid var(--darkgrayblue);
             border-radius: 20px;
             padding: 16px 24px;
+            
             }
 
-            button{
-                background-color: none;
-                border: 1px solid (var(--darkgrayblue));
-                border-radius: 30px;
-                padding: 8px 24px;
-                
-            }
         }      
         
         a:link, a:visited {
@@ -56,11 +50,15 @@
             color: (var(--darkgrayblue));
             transition: 0.25s;
             display: inline-block;
+            background-color: none;
+            border: 1px solid (var(--darkgrayblue));
+            border-radius: 30px;
+            padding: 8px 16px;
             
             &:hover,
             &:active {
                 color: (var(--title));
-                padding: 10px;
+                padding: 20px;
             }
         }
 

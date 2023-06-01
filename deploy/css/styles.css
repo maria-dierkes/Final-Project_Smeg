@@ -568,11 +568,9 @@ nav ul li a:link, nav ul li a:visited {
 }
 @media (min-width: 1024px) {
   nav ul li a:link, nav ul li a:visited {
-    padding: 24px 26px;
+    padding: 16px 10px;
     transition: 0.25s;
-    border-radius: 6px;
-    padding: 24px 36px;
-    border: 1px solid var(--darkgrayblue);
+    font-size: 24px;
   }
 }
 @media (min-width: 1024px) {
@@ -745,6 +743,8 @@ footer div #copyright {
 ============= */
 #hero {
   background-color: black;
+  background-image: url("../img/hero/hero.jpg");
+  background-position: auto;
 }
 #hero img {
   width: 100%;
@@ -794,20 +794,18 @@ footer div #copyright {
   border-radius: 20px;
   padding: 16px 24px;
 }
-#search div form button {
-  background-color: none;
-  border: 1px solid var(--darkgrayblue);
-  border-radius: 30px;
-  padding: 8px 24px;
-}
 #search div a:link, #search div a:visited {
   color: var(--darkgrayblue);
   transition: 0.25s;
   display: inline-block;
+  background-color: none;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 30px;
+  padding: 8px 16px;
 }
 #search div a:link:hover, #search div a:link:active, #search div a:visited:hover, #search div a:visited:active {
   color: var(--title);
-  padding: 10px;
+  padding: 20px;
 }
 
 /* =============
@@ -816,46 +814,164 @@ footer div #copyright {
 #features {
   scroll-margin-top: 40px;
   background-color: black;
-  padding: 20px;
-  display: flex;
-}
-#features div .toasterimage1 {
-  background-color: var(--darkgrayblue);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding: 10px;
+  width: auto;
+  height: 1600px;
 }
-#features div .toasterimage2 {
-  background-color: var(--darkgrayblue);
-  border-radius: 50%;
+@media (min-width: 1200px) {
+  #features {
+    height: 500px;
+  }
 }
-#features div .toasterimage3 {
-  background-color: var(--darkgrayblue);
-  border-radius: 60%;
+@media (min-width: 1024px) {
+  #features {
+    height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  #features {
+    height: 1300px;
+  }
+}
+#features div h1 {
+  color: var(--titlewhite);
+  font-size: 35px;
+}
+#features div #toaster1 .toasterimage1 {
+  position: absolute;
+  top: 980px;
+  left: 50px;
+  width: 400px;
+}
+@media (min-width: 768px) {
+  #features div #toaster1 .toasterimage1 {
+    position: absolute;
+    top: 1100px;
+    left: 470px;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #features div #toaster1 .toasterimage1 {
+    position: absolute;
+    top: 1800px;
+    left: 470px;
+    width: 400px;
+  }
+}
+#features div #toaster1 .backgroundcircle1 {
+  position: absolute;
+  top: 990px;
+  left: 90px;
+  width: 350px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  #features div #toaster1 .backgroundcircle1 {
+    position: absolute;
+    top: 1100px;
+    left: 470px;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #features div #toaster1 .backgroundcircle1 {
+    position: absolute;
+    top: 1800px;
+    left: 440px;
+    width: 400px;
+  }
+}
+#features div #toaster2 .toasterimage2 {
+  position: absolute;
+  top: 1480px;
+  left: -10px;
+  width: 400px;
+}
+@media (min-width: 768px) {
+  #features div #toaster2 .toasterimage2 {
+    position: absolute;
+    top: 1500px;
+    left: 300px;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #features div #toaster2 .toasterimage2 {
+    position: absolute;
+    top: 1500px;
+    left: 820px;
+    width: 500px;
+  }
+}
+#features div #toaster2 .backgroundcircle2 {
+  position: absolute;
+  top: 1480px;
+  left: 15px;
+  width: 350px;
+}
+@media (min-width: 768px) {
+  #features div #toaster2 .backgroundcircle2 {
+    position: absolute;
+    top: 1550px;
+    left: 300px;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #features div #toaster2 .backgroundcircle2 {
+    position: absolute;
+    top: 1500px;
+    left: 870px;
+    width: 400px;
+  }
+}
+#features div #toaster3 .toasterimage3 {
+  position: absolute;
+  top: 1900px;
+  left: -100px;
+  width: 400px;
+}
+@media (min-width: 1024px) {
+  #features div #toaster3 .toasterimage3 {
+    position: absolute;
+    top: 1500px;
+    left: 40px;
+    width: 500px;
+  }
+}
+#features div #toaster3 .backgroundcircle3 {
+  position: absolute;
+  top: 1940px;
+  left: -50px;
+  width: 310px;
+}
+@media (min-width: 1024px) {
+  #features div #toaster3 .backgroundcircle3 {
+    position: absolute;
+    top: 1500px;
+    left: 40px;
+    width: 370px;
+  }
 }
 #features div #featurepara1 {
   text-align: left;
-  padding-right: 251px;
-  padding-left: 24px;
 }
 #features div #featurepara2 {
   text-align: left;
-  padding-left: 251px;
-  padding-right: 24px;
+  margin-top: 340px;
 }
-#features div #toaster1 .toasterimage1 {
-  display: flex;
-  justify-content: flex-end;
+#features div #featurepara3 {
+  text-align: left;
+  margin-left: 190px;
+  margin-top: 370px;
 }
-#features div #toaster1 .backgroundcircle {
-  display: flex;
-  justify-content: flex-end;
-}
-#features div ul li {
-  list-style: none;
+#features div #featurepara4 {
+  text-align: left;
+  margin-left: 190px;
+  margin-top: 270px;
 }
 
 /* =============
@@ -874,7 +990,10 @@ footer div #copyright {
   width: 100%;
   height: 75%;
 }
-#accessories div #accesswrite {
+#accessories div #accesswrite1 {
+  padding: 0 60px 0;
+}
+#accessories div #accesswrite2 {
   padding: 0 60px 0;
 }
 #accessories div ul li {
@@ -918,19 +1037,21 @@ footer div #copyright {
   justify-content: center;
 }
 #product div ul li .swatches {
-  display: inline-block;
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
-  padding: 0;
+  padding-bottom: 10px;
+  gap: 5px;
+}
+#product div ul li .swatches img {
+  width: 90%;
 }
 #product div ul li .swatches a:link, #product div ul li .swatches a:visited {
   border-radius: 50%;
   transition: 0.25s;
 }
 #product div ul li .swatches a:link:hover, #product div ul li .swatches a:link:active, #product div ul li .swatches a:visited:hover, #product div ul li .swatches a:visited:active {
-  border: 2px solid var(--offwhite);
-  border-radius: 50%;
+  padding: 16px;
 }
 #product div ul .buynow {
   display: flex;
@@ -1108,15 +1229,23 @@ footer div #copyright {
 }
 #gallery div ul #g1 {
   grid-area: g1;
+  background-image: url("../img/hero/gallery1.jpg");
+  background-position: auto;
 }
 #gallery div ul #g2 {
   grid-area: g2;
+  background-image: url("../img/hero/gallery2.jpg");
+  background-position: auto;
 }
 #gallery div ul #g3 {
   grid-area: g3;
+  background-image: url("../img/hero/gallery3.jpg");
+  background-position: auto;
 }
 #gallery div ul #g4 {
   grid-area: g4;
+  background-image: url("../img/hero/gallery4.jpg");
+  background-position: auto;
 }
 
 /* =============
@@ -1209,7 +1338,7 @@ footer div #copyright {
 ============= */
 #thankyou {
   background-color: black;
-  padding: 100px;
+  padding: 200px;
   align-content: center;
 }
 #thankyou #yourorder {
@@ -1275,7 +1404,7 @@ footer div #copyright {
   }
 }
 #thankyou ul #t1 img {
-  width: 400px;
+  width: 300px;
 }
 #thankyou ul #t2 {
   text-align: center;
@@ -1291,7 +1420,7 @@ footer div #copyright {
   }
 }
 #thankyou ul #t3 img {
-  width: 350px;
+  width: 250px;
 }
 #thankyou ul #t4 {
   text-align: center;
