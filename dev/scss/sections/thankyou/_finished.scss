@@ -5,7 +5,8 @@
 #thankyou{
 
         background-color: black;
-        padding: 200px;
+        padding: 100px;
+        align-content: center;
 
     #yourorder{
         
@@ -83,10 +84,10 @@
             @include lg{
                 display: grid;
                 gap: 16px;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(6, 1fr);
                 grid-template-areas: 
-                "t1 t3"
-                "t2 t4"; 
+                ".  t1 t1 t3 t3 ."
+                ". t2 t2 t4 t4 ."; 
             }
 
 
