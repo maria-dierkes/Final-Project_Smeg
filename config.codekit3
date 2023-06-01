@@ -358,15 +358,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/elements\/toaster1.jpg" : {
+    "\/deploy\/img\/elements\/Toaster1.jpg" : {
       "ft" : 16384,
       "iS" : 63426,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/elements\/toaster1.jpg",
+      "oAP" : "\/deploy\/img\/elements\/Toaster1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -381,15 +381,15 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/elements\/toaster2.jpg" : {
+    "\/deploy\/img\/elements\/Toaster2.jpg" : {
       "ft" : 16384,
       "iS" : 107299,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/elements\/toaster2.jpg",
+      "oAP" : "\/deploy\/img\/elements\/Toaster2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -404,15 +404,15 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/elements\/toaster3.jpg" : {
+    "\/deploy\/img\/elements\/Toaster3.jpg" : {
       "ft" : 16384,
       "iS" : 83663,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/elements\/toaster3.jpg",
+      "oAP" : "\/deploy\/img\/elements\/Toaster3.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
