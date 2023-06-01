@@ -705,14 +705,6 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
     },
-    "\/dev\/content\/checkout\/placeorder.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/deploy\/checkout.html",
-      "oF" : 2
-    },
     "\/dev\/content\/checkout\/timeline.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -722,6 +714,14 @@
       "oF" : 3
     },
     "\/dev\/content\/index\/accessories.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
+    },
+    "\/dev\/content\/index\/discription.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
@@ -986,21 +986,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/checkout\/_placeorder.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/checkout\/_placeorder.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/sections\/checkout\/_timeline.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1027,6 +1012,21 @@
       "oA" : 1,
       "oAP" : "\/deploy\/css\/styles.css",
       "oF" : 3,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/index\/_discription.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/index\/_discription.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

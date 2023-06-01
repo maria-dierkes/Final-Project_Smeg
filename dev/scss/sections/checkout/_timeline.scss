@@ -1,3 +1,112 @@
 /* =============
     timeline
 ============= */
+
+#checkout{
+
+    background-color: black;
+
+    padding: 20px;
+
+    #order{
+
+
+        .bluetoaster{
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, #647F95, black);
+            border-image-slice: 1;
+            display: flex;
+
+            margin-bottom: 20px;
+            img{
+                width: 400px;
+            }
+        }
+        .pinktoaster{
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, #647F95, black);
+            border-image-slice: 1;
+            display: flex;
+            img{
+                width: 350px;
+            }
+        }
+    }
+
+    form{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 40px;
+        gap: 20px;
+
+        input{
+        background-color: transparent;
+        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        color: (var(--darkgrayblue));
+        width: 70%;
+        border: 1px solid var(--darkgrayblue);
+        border-radius: 20px;
+        padding: 16px 24px;
+        }
+
+        button{
+            background-color: none;
+            border: 1px solid (var(--darkgrayblue));
+            border-radius: 30px;
+            padding: 16px 24px;
+
+            
+        }
+    }  
+    #code{
+        a:link, a:visited {
+
+            color: (var(--darkgrayblue));
+            text-decoration: none;
+            font-size: 16px;
+            padding: 16px;
+            border: 1px solid var(--darkgrayblue);
+            transition: 0.25s;
+            border-radius: 20px;
+            display: inline-block;
+            
+            &:hover,
+            &:active {
+                background-color: (var(--darkgrayblue));
+                color: (var(--title));
+                padding: 20px;
+            }
+        } 
+    }
+
+    #calculate{
+            border: 1px solid transparent;
+            border-image: linear-gradient(to bottom, #647F95, black);
+            border-image-slice: 1;
+            padding: 16px;
+    }
+    #confirm{
+       a:link, a:visited {
+
+        color: (var(--darkgrayblue));
+        text-decoration: none;
+        font-size: 16px;
+        padding: 16px;
+        border: 1px solid var(--darkgrayblue);
+        transition: 0.25s;
+        border-radius: 20px;
+        display: inline-block;
+        
+        &:hover,
+        &:active {
+            background-color: (var(--darkgrayblue));
+            color: (var(--title));
+            padding: 20px;
+        }
+    } 
+    }
+    
+}

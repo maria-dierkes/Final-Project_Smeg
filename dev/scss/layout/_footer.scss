@@ -5,80 +5,116 @@
 
 footer{
 
-    background-color: var(--darkgrayblue);
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer .";
-
-    // @include xxl{
-    //     display: grid;
-    //     grid-template-columns: auto 1440px auto;
+    // #smeglogo{
+    //     position: relative;
+    //     top: 900px;
+    //     left: 1000px;
     // }
 
+    background-color: var(--darkgrayblue);
+
     div{
-        grid-area: footer;
+        padding: 30px 70px 20px;
         font-family: 'Poppins', 'Regular', 'Sans-serif';
-        color: var(--stormblue);
-        input{
-            border: none;
-            background-color: var(--stormblue);
-            color:var(--iceblue);
-            padding: 16px 24px;
-            width: 287px;
-        }
-        button{
-            background-color:var(--flower);
-            color: var(--iceblue);
-            border: none;
-            padding: 16px 24px;
-            
-        }
         
-        #address{
-            grid-template-columns: 70% auto;
-            padding: 16px;
-            grid-area: address;
+        @include md{
+            display: grid;
+            grid-template-columns: repeat (4, 1fr);
+            grid-template-areas:
+            "care account info subscribe"
+            "copyright copyrigh . .";
+
         }
 
-        #subscribe{
-            grid-template-columns: 70% auto;
-            padding: 16px;
-            grid-area: subscribe;
-            scroll-margin-top: 200px;
+        #care{
+            grid-area: care;
+        }
+        #account{
+            grid-area: account;
+        }
+        #info{
+            grid-area: info;
 
             a:link, a:visited {
-
-                color: (var(--iceblue));
+    
+                color: (var(--titlewhite));
                 text-decoration: none;
-                font-size: 16px;
-                font-weight: bold;
-                padding: 16px;
-                background-color: (var(--flower));
-                display: inline-block;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 5px;
                 transition: 0.25s;
-                text-align: right;
-                border-radius: 0;
+                display: inline-block;
                 
                 &:hover,
                 &:active {
-                    background-color: (var(--lightflower));
-                    padding: 20px;
+                    background-color: (var(--offwhite));
+                    color: (var(--darkgrayblue));
+                    padding: 16px;
                 }
-            }   
+            }
+        }
+
+        #subscribe{
+
+            form{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                padding: 40px;
+                gap: 20px;
+    
+                input{
+                background-color: transparent;
+                font-family: 'Poppins', 'Regular', 'Sans-serif';
+                color: (var(--offwhite));
+                width: 70%;
+                border: 1px solid var(--offwhite);
+                border-radius: 20px;
+                padding: 16px 24px;
+                }
+    
+                button{
+                    background-color: none;
+                    border: 1px solid (var(--offwhite));
+                    border-radius: 30px;
+                    padding: 16px 24px;
+                    
+                }
+            }  
+    
+            a:link, a:visited {
+    
+                    color: (var(--offwhite));
+                    text-decoration: none;
+                    font-size: 16px;
+                    padding: 16px;
+                    border: 1px solid var(--offwhite);
+                    transition: 0.25s;
+                    border-radius: 20px;
+                    display: inline-block;
+                    
+                    &:hover,
+                    &:active {
+                        background-color: (var(--offwhite));
+                        color: (var(--darkgrayblue));
+                        padding: 20px;
+                    }
+                }
 
         }
 
         #social{
-            grid-template-columns: 70% auto;
-            padding: 16px;
+            
             grid-area: social;
             ul{
                 display: flex;
-                gap: 24px;
+                gap: -5px;
 
                 a:link, a:visited {
 
-                    color: (var(--iceblue));
+                    color: (var(--titlewhite));
                     text-decoration: none;
                     padding: 10px;
                     display: inline-block;
@@ -87,9 +123,6 @@ footer{
                     
                     &:hover,
                     &:active {
-                        background-color: (var(--flower));
-                        color: (var(--flower));
-                        border-radius: 20%;
                         padding: 16px;
                     }
                 }   
@@ -97,23 +130,12 @@ footer{
         }
 
         #copyright{
-            // grid-template-columns: 70% auto;
-            padding: 16px;
             grid-area: copyright;
+            display: flex;
+
         }
 
-        
 
-
-        // @include md{
-        //     display: grid;
-        //     grid-template-columns: repeat (2, 1fr);
-        //     grid-template-rows: 30% auto;
-        //     grid-template-areas:
-        //     "address subscribe"
-        //     " . social"
-        //     "copyright .";
-        // }
         // @include lg{
         //         display: grid;
         //         grid-template-columns: repeat (3, 1fr);

@@ -1,0 +1,33 @@
+
+
+#discription{
+
+    background-color: black;
+    color: var(--title);
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .discription{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            font-family: 'Poppins', 'Regular', 'Sans-serif';
+            
+            
+            display: inline-block;
+            text-align: center;  
+
+            
+            border: 1px solid transparent;
+            border-image: linear-gradient(to bottom, #647F95, black);
+            border-image-slice: 1;
+            padding: 15px;
+
+            box-sizing: border-box;
+
+        }
+            
+}

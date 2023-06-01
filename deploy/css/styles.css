@@ -369,7 +369,7 @@ header {
   font-family: "Poppins", "Regular", "Sans-serif";
 }
 
-#hero {
+#discription {
   font-family: "Poppins", "Regular", "Sans-serif";
 }
 
@@ -424,6 +424,9 @@ header {
 #reviews {
   font-family: "Poppins", "Regular", "Sans-serif";
 }
+#reviews h1 {
+  font-size: 30px;
+}
 #reviews h1, #reviews h2, #reviews h3 {
   color: var(--titlewhite);
   font-weight: bolder;
@@ -453,24 +456,35 @@ header {
   color: var(--titlewhite);
 }
 
-footer {
-  font-family: "Poppins", "Regular", "Sans-serif";
+footer div {
+  font-family: "Poppins", "Regular" "Sans-serif";
 }
-footer .title {
+footer div .title {
   color: var(--white);
-  font-weight: bolder;
 }
-footer .items {
-  color: var(--offwhite);
-  font-weight: lighter;
+footer div .items {
+  color: var(--titlewhite);
 }
-footer h2 {
-  color: var(--offwhite);
+footer div .textfooter {
+  color: var(--white);
+}
+footer div p {
+  color: var(--white);
 }
 
 /* =============
    checkout
 ============= */
+#checkout {
+  font-family: "Poppins", "Regular", "Sans-serif";
+}
+#checkout .white {
+  color: var(--white);
+}
+#checkout .blue {
+  color: var(--darkgrayblue);
+}
+
 /* =============
     thankyou
 ============= */
@@ -634,66 +648,87 @@ header div nav {
 ============= */
 footer {
   background-color: var(--darkgrayblue);
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
 }
 footer div {
-  grid-area: footer;
+  padding: 30px 70px 20px;
   font-family: "Poppins", "Regular", "Sans-serif";
-  color: var(--stormblue);
 }
-footer div input {
-  border: none;
-  background-color: var(--stormblue);
-  color: var(--iceblue);
-  padding: 16px 24px;
-  width: 287px;
+@media (min-width: 768px) {
+  footer div {
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-areas: "care account info subscribe" "copyright copyrigh . .";
+  }
 }
-footer div button {
-  background-color: var(--flower);
-  color: var(--iceblue);
-  border: none;
-  padding: 16px 24px;
+footer div #care {
+  grid-area: care;
 }
-footer div #address {
-  grid-template-columns: 70% auto;
+footer div #account {
+  grid-area: account;
+}
+footer div #info {
+  grid-area: info;
+}
+footer div #info a:link, footer div #info a:visited {
+  color: var(--titlewhite);
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  transition: 0.25s;
+  display: inline-block;
+}
+footer div #info a:link:hover, footer div #info a:link:active, footer div #info a:visited:hover, footer div #info a:visited:active {
+  background-color: var(--offwhite);
+  color: var(--darkgrayblue);
   padding: 16px;
-  grid-area: address;
 }
-footer div #subscribe {
-  grid-template-columns: 70% auto;
-  padding: 16px;
-  grid-area: subscribe;
-  scroll-margin-top: 200px;
+footer div #subscribe form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+footer div #subscribe form input {
+  background-color: transparent;
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--offwhite);
+  width: 70%;
+  border: 1px solid var(--offwhite);
+  border-radius: 20px;
+  padding: 16px 24px;
+}
+footer div #subscribe form button {
+  background-color: none;
+  border: 1px solid var(--offwhite);
+  border-radius: 30px;
+  padding: 16px 24px;
 }
 footer div #subscribe a:link, footer div #subscribe a:visited {
-  color: var(--iceblue);
+  color: var(--offwhite);
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
   padding: 16px;
-  background-color: var(--flower);
-  display: inline-block;
+  border: 1px solid var(--offwhite);
   transition: 0.25s;
-  text-align: right;
-  border-radius: 0;
+  border-radius: 20px;
+  display: inline-block;
 }
 footer div #subscribe a:link:hover, footer div #subscribe a:link:active, footer div #subscribe a:visited:hover, footer div #subscribe a:visited:active {
-  background-color: var(--lightflower);
+  background-color: var(--offwhite);
+  color: var(--darkgrayblue);
   padding: 20px;
 }
 footer div #social {
-  grid-template-columns: 70% auto;
-  padding: 16px;
   grid-area: social;
 }
 footer div #social ul {
   display: flex;
-  gap: 24px;
+  gap: -5px;
 }
 footer div #social ul a:link, footer div #social ul a:visited {
-  color: var(--iceblue);
+  color: var(--titlewhite);
   text-decoration: none;
   padding: 10px;
   display: inline-block;
@@ -701,14 +736,11 @@ footer div #social ul a:link, footer div #social ul a:visited {
   text-align: right;
 }
 footer div #social ul a:link:hover, footer div #social ul a:link:active, footer div #social ul a:visited:hover, footer div #social ul a:visited:active {
-  background-color: var(--flower);
-  color: var(--flower);
-  border-radius: 20%;
   padding: 16px;
 }
 footer div #copyright {
-  padding: 16px;
   grid-area: copyright;
+  display: flex;
 }
 
 /* =============
@@ -716,19 +748,25 @@ footer div #copyright {
 ============= */
 #hero {
   background-color: black;
-  color: var(--title);
-  padding-bottom: 20px;
 }
 #hero img {
   width: 100%;
 }
-#hero div .discription {
+
+#discription {
+  background-color: black;
+  color: var(--title);
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#discription .discription {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: "Poppins", "Regular", "Sans-serif";
   display: inline-block;
   text-align: center;
-  align-items: center;
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, #647F95, black);
   border-image-slice: 1;
@@ -744,16 +782,36 @@ footer div #copyright {
   background-color: black;
   padding: 40px;
 }
-#search div {
+#search div form {
   display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+#search div form input {
+  background-color: transparent;
   font-family: "Poppins", "Regular", "Sans-serif";
-  padding: 20px;
-  border: none;
-  color: var(--flower);
-  background-color: var(--iceblue);
-  padding-left: 26px;
-  font-size: 1.25rem;
+  color: var(--darkgrayblue);
+  width: 70%;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 20px;
+  padding: 16px 24px;
+}
+#search div form button {
+  background-color: none;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 30px;
+  padding: 8px 24px;
+}
+#search div a:link, #search div a:visited {
+  color: var(--darkgrayblue);
+  transition: 0.25s;
+  display: inline-block;
+}
+#search div a:link:hover, #search div a:link:active, #search div a:visited:hover, #search div a:visited:active {
+  color: var(--title);
+  padding: 10px;
 }
 
 /* =============
@@ -1022,6 +1080,7 @@ footer div #copyright {
 }
 #gallery div {
   display: grid;
+  padding-bottom: 100px;
 }
 #gallery div img {
   width: 100%;
@@ -1072,17 +1131,96 @@ footer div #copyright {
 }
 
 /* =============
-    placeorder
-============= */
-/* =============
     timeline
 ============= */
+#checkout {
+  background-color: black;
+  padding: 20px;
+}
+#checkout #order .bluetoaster {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #647F95, black);
+  border-image-slice: 1;
+  display: flex;
+  margin-bottom: 20px;
+}
+#checkout #order .bluetoaster img {
+  width: 400px;
+}
+#checkout #order .pinktoaster {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #647F95, black);
+  border-image-slice: 1;
+  display: flex;
+}
+#checkout #order .pinktoaster img {
+  width: 350px;
+}
+#checkout form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+}
+#checkout form input {
+  background-color: transparent;
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--darkgrayblue);
+  width: 70%;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 20px;
+  padding: 16px 24px;
+}
+#checkout form button {
+  background-color: none;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 30px;
+  padding: 16px 24px;
+}
+#checkout #code a:link, #checkout #code a:visited {
+  color: var(--darkgrayblue);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid var(--darkgrayblue);
+  transition: 0.25s;
+  border-radius: 20px;
+  display: inline-block;
+}
+#checkout #code a:link:hover, #checkout #code a:link:active, #checkout #code a:visited:hover, #checkout #code a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--title);
+  padding: 20px;
+}
+#checkout #calculate {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, black);
+  border-image-slice: 1;
+  padding: 16px;
+}
+#checkout #confirm a:link, #checkout #confirm a:visited {
+  color: var(--darkgrayblue);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid var(--darkgrayblue);
+  transition: 0.25s;
+  border-radius: 20px;
+  display: inline-block;
+}
+#checkout #confirm a:link:hover, #checkout #confirm a:link:active, #checkout #confirm a:visited:hover, #checkout #confirm a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--title);
+  padding: 20px;
+}
+
 /* =============
     finished
 ============= */
 #thankyou {
   background-color: black;
-  padding: 100px;
+  padding: 200px;
 }
 #thankyou #yourorder {
   border: 1px solid transparent;
@@ -1094,11 +1232,14 @@ footer div #copyright {
 #thankyou #writereview {
   display: grid;
   text-align: center;
+  margin-top: 20px;
 }
 #thankyou #writereview form {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px;
+  gap: 20px;
 }
 #thankyou #writereview form input {
   background-color: transparent;
@@ -1123,6 +1264,7 @@ footer div #copyright {
   border: 1px solid var(--darkgrayblue);
   transition: 0.25s;
   border-radius: 20px;
+  display: inline-block;
 }
 #thankyou #writereview a:link:hover, #thankyou #writereview a:link:active, #thankyou #writereview a:visited:hover, #thankyou #writereview a:visited:active {
   background-color: var(--darkgrayblue);
@@ -1143,7 +1285,7 @@ footer div #copyright {
   }
 }
 #thankyou ul #t1 img {
-  width: 450px;
+  width: 400px;
 }
 #thankyou ul #t2 {
   text-align: center;
@@ -1159,7 +1301,7 @@ footer div #copyright {
   }
 }
 #thankyou ul #t3 img {
-  width: 400px;
+  width: 350px;
 }
 #thankyou ul #t4 {
   text-align: center;
