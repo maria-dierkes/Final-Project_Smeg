@@ -1,0 +1,125 @@
+/* =============
+    finished
+============= */
+
+#thankyou{
+
+        background-color: black;
+        padding: 100px;
+
+    #yourorder{
+        
+        
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, #647F95, black);
+        border-image-slice: 1;
+
+        padding-left: 50px;
+        padding-right:50px;
+        // text-align: center;
+        
+    }
+
+    #writereview{
+
+        display: grid;
+
+        text-align: center;
+
+
+        form{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            input{
+            background-color: transparent;
+            font-family: 'Poppins', 'Regular', 'Sans-serif';
+            color: (var(--darkgrayblue));
+            width: 70%;
+            border: 1px solid var(--darkgrayblue);
+            border-radius: 20px;
+            padding: 16px 24px;
+            }
+
+            button{
+                background-color: none;
+                border: 1px solid (var(--darkgrayblue));
+                border-radius: 30px;
+                padding: 16px 24px;
+                
+            }
+        }  
+
+        a:link, a:visited {
+
+                color: (var(--darkgrayblue));
+                text-decoration: none;
+                font-size: 16px;
+                padding: 16px;
+                border: 1px solid var(--darkgrayblue);
+                transition: 0.25s;
+                border-radius: 20px;
+                
+                &:hover,
+                &:active {
+                    background-color: (var(--darkgrayblue));
+                    color: (var(--title));
+                    padding: 20px;
+                }
+            }
+    }
+
+        ul{
+
+
+            @include lg{
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "t1 t3"
+                "t2 t4"; 
+            }
+
+
+
+        #t1{
+            @include lg{
+                grid-area: t1;  
+            }
+
+            img{
+                width: 450px;
+            }
+        
+        }
+        #t2{
+            @include lg{
+                grid-area: t2;  
+            }
+
+            text-align: center;
+        
+        }
+        #t3{
+            @include lg{
+                grid-area: t3;  
+            }
+
+            img{
+                width: 400px;
+            }
+        
+
+        }
+        #t4{
+            @include lg{
+                grid-area: t4;  
+            }
+            text-align: center;
+        }
+    }
+}

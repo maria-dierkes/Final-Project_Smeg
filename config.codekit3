@@ -246,18 +246,6 @@
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 0
     },
-    "\/deploy\/css\/_gallery.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/deploy\/css\/_gallery-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -998,7 +986,37 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_accessories.scss" : {
+    "\/dev\/scss\/sections\/checkout\/_placeorder.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_placeorder.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/checkout\/_timeline.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/checkout\/_timeline.css",
+      "oF" : 1,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/index\/_accessories.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1013,7 +1031,52 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_features.scss" : {
+    "\/dev\/scss\/sections\/index\/_features.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/index\/_features.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/index\/_gallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/index\/_gallery.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/index\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/index\/_hero.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/index\/_product.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1028,7 +1091,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_gallery.scss" : {
+    "\/dev\/scss\/sections\/index\/_reviews.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1037,13 +1100,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/deploy\/css\/_gallery.css",
-      "oF" : 3,
+      "oAP" : "\/dev\/scss\/sections\/index\/_reviews.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero.scss" : {
+    "\/dev\/scss\/sections\/index\/_search.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1052,43 +1115,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 3,
+      "oAP" : "\/dev\/scss\/sections\/index\/_search.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_product.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 3,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_reviews.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 3,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_search.scss" : {
+    "\/dev\/scss\/sections\/thankyou\/_finished.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,

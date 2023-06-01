@@ -2,6 +2,11 @@
     Typography
 ============= */
 
+
+/* =============
+    index
+============= */
+
 header{
     font-family: 'Poppins', 'Regular', 'Sans-serif';
 }
@@ -102,3 +107,31 @@ footer{
     }
 
 }
+
+
+/* =============
+   checkout
+============= */
+
+
+/* =============
+    thankyou
+============= */
+
+#thankyou{
+
+    #yourorder{
+        font-family: 'Poppins', 'Regular', 'Sans-serif';
+    color: var(--white);
+    h1{
+        font-size: 40px;
+    }
+    
+    }
+    #writereview{
+        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        color: var(--darkgrayblue);
+    }
+
+}
+

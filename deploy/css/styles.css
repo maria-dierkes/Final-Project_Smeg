@@ -362,6 +362,9 @@ button {
 /* =============
     Typography
 ============= */
+/* =============
+    index
+============= */
 header {
   font-family: "Poppins", "Regular", "Sans-serif";
 }
@@ -463,6 +466,24 @@ footer .items {
 }
 footer h2 {
   color: var(--offwhite);
+}
+
+/* =============
+   checkout
+============= */
+/* =============
+    thankyou
+============= */
+#thankyou #yourorder {
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--white);
+}
+#thankyou #yourorder h1 {
+  font-size: 40px;
+}
+#thankyou #writereview {
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--darkgrayblue);
 }
 
 /* =============
@@ -849,6 +870,10 @@ footer div #copyright {
 }
 #product div ul li .swatches {
   display: inline-block;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
 }
 #product div ul li .swatches a:link, #product div ul li .swatches a:visited {
   border-radius: 50%;
@@ -1044,4 +1069,103 @@ footer div #copyright {
 }
 #gallery div ul #g4 {
   grid-area: g4;
+}
+
+/* =============
+    placeorder
+============= */
+/* =============
+    timeline
+============= */
+/* =============
+    finished
+============= */
+#thankyou {
+  background-color: black;
+  padding: 100px;
+}
+#thankyou #yourorder {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, #647F95, black);
+  border-image-slice: 1;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#thankyou #writereview {
+  display: grid;
+  text-align: center;
+}
+#thankyou #writereview form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#thankyou #writereview form input {
+  background-color: transparent;
+  font-family: "Poppins", "Regular", "Sans-serif";
+  color: var(--darkgrayblue);
+  width: 70%;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 20px;
+  padding: 16px 24px;
+}
+#thankyou #writereview form button {
+  background-color: none;
+  border: 1px solid var(--darkgrayblue);
+  border-radius: 30px;
+  padding: 16px 24px;
+}
+#thankyou #writereview a:link, #thankyou #writereview a:visited {
+  color: var(--darkgrayblue);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid var(--darkgrayblue);
+  transition: 0.25s;
+  border-radius: 20px;
+}
+#thankyou #writereview a:link:hover, #thankyou #writereview a:link:active, #thankyou #writereview a:visited:hover, #thankyou #writereview a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--title);
+  padding: 20px;
+}
+@media (min-width: 1024px) {
+  #thankyou ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "t1 t3" "t2 t4";
+  }
+}
+@media (min-width: 1024px) {
+  #thankyou ul #t1 {
+    grid-area: t1;
+  }
+}
+#thankyou ul #t1 img {
+  width: 450px;
+}
+#thankyou ul #t2 {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #thankyou ul #t2 {
+    grid-area: t2;
+  }
+}
+@media (min-width: 1024px) {
+  #thankyou ul #t3 {
+    grid-area: t3;
+  }
+}
+#thankyou ul #t3 img {
+  width: 400px;
+}
+#thankyou ul #t4 {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #thankyou ul #t4 {
+    grid-area: t4;
+  }
 }
