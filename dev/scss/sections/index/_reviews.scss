@@ -23,13 +23,15 @@
         ul{
 
             .profile{
-                
+
+
                 a:link, a:visited {
+                    background-color: var(--white);
                     color: (var(--darkgrayblue));
-                    padding: 16px;
+                    padding: 16px 16px 20px;
                     border: 1px solid var(--darkgrayblue);
                     transition: 0.25s;
-                    border-radius: 50%;
+                    border-radius: 100%;
                     
                     &:hover,
                     &:active {

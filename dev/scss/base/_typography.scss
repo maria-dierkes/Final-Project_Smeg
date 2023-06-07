@@ -12,11 +12,14 @@ header{
 }
 #discription{
     font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-size: 16px;
+    line-height: 19px;
 }
 #features{
     font-family: 'Poppins', 'Regular', 'Sans-serif';
-    color: var(--title);
+    color: var(--offwhite);
     h1{
+        color: var(--offwhite);
         font-weight: bold;
         font-size: 30px;
     }
@@ -26,6 +29,7 @@ header{
     p{
         font-weight: lighter;
         font-size: small;
+        line-height: 17px;
     }
 }
 #accessories{
@@ -45,18 +49,43 @@ header{
 }
 #product{
     font-family: 'Poppins', 'Regular', 'Sans-serif';
+    line-height: 0px;
     h1{
-        color: var(--titlewhite);
+        color: var(--offwhite);
         font-size: 30px;
     }
-    h2{
-        color: var(--offwhite);
-        font-weight: bold;
-    }
-    h3, h4{
-        color: var(--offwhite);
-        font-weight: lighter;
-    }
+
+    // @include medium{
+    //     h2{
+    //     color: var(--offwhite);
+    //     font-weight: bold;
+    // }
+    // h3{
+    //     color: var(--offwhite);
+    //     font-weight: lighter;
+    // }
+    // h4{
+    //     color: var(--titlewhite);
+    //     font-weight: lighter;
+    // }
+    // }
+    
+        h2{
+            color: var(--offwhite);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h3{
+            color: var(--offwhite);
+            font-weight: lighter;
+            font-size: medium;
+        }
+        h4{
+            color: var(--titlewhite);
+            font-weight: lighter;
+            font-size: smaller;
+        }
+        
 }
 #reviews{
     font-family: 'Poppins', 'Regular', 'Sans-serif';
@@ -86,7 +115,6 @@ header{
 #gallery{
     font-family: 'Poppins', 'Regular', 'Sans-serif';
     color: var(--title);
-    font-size: 30px;
     font-weight: bold;
 }
 #search{
