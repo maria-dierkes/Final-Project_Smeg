@@ -613,7 +613,7 @@
       "oAP" : "\/deploy\/img\/heroes\/gallery1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -626,7 +626,7 @@
       "oAP" : "\/deploy\/img\/heroes\/gallery2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -639,7 +639,7 @@
       "oAP" : "\/deploy\/img\/heroes\/gallery3.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -652,7 +652,7 @@
       "oAP" : "\/deploy\/img\/heroes\/gallery4.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

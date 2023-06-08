@@ -5,8 +5,13 @@
 #thankyou{
 
         background-color: black;
-        padding: 200px;
+        padding: 50px;
         align-content: center;
+        margin-top: 95px;
+
+        @include md{
+            padding: 200px;
+        }
 
     #yourorder{
         

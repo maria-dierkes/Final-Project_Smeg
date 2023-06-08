@@ -3,77 +3,117 @@
 ============= */
 
 #features{
-    overflow-x: hidden;
 
     scroll-margin-top: 40px;
 
     background-color: black;
-    padding-top: 20px;
-    padding: 10px;
-    width: 100%;
-   
-    // height: 1600px;
+    padding: 10px 40px 80px;
 
-    // @include xl{
-    //     height: 500px;
-    // }
-    // @include lg{
-    //     height: 500px;
-    // }
+    h1{
+        color: var(--titlewhite);
+        font-size: 35px;
+        padding-bottom: 40px;
+    }
 
-    // @include md{
-    //     // height: 1300px;
-    // }
+    #setup{
 
-    border: 1px solid red;
+        @include lg{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        // grid-template-columns: 30% 10% 10% auto auto;
+        grid-template-areas: 
+        "t1 t1 f2 ."
+        "f3 f3 t3 t3"
+        "t2 t2 f4 f4"
+        "t2 t2 f1 f1";
 
-        div{
-
-            h1{
-                color: var(--titlewhite);
-                font-size: 35px;
-            }
-            #toaster1{
-                
-            }
-            
-            
-            #toaster2{
-
-            }
-
-            #toaster3{
-
-            }
-            
-
-            #featurepara1{
-                text-align: left;
-                padding-right: 200px;
-                // padding-right: 251px;
-                // padding-left: 24px;
-                // margin-left: 10px;
-
-            }
-            #featurepara2{
-                text-align: left;
-                padding-right: 150px;
-                // padding-right: 251px;
-                // padding-left: 24px;
-                // margin-left: 10px;
-                margin-top: 340px;
-            }
-            #featurepara3{
-                text-align: left;
-                margin-left: 190px;
-                margin-top: 370px;
-            }
-            #featurepara4{
-                text-align: left;
-                margin-left: 190px;
-                margin-top: 290px;
-            }
-            
         }
 
+
+        .toaster1{
+            img{
+                width: 100%;
+            }
+            background-color: var(--darkgrayblue);
+            border-radius: 50%;
+
+            @include lg{
+                grid-area: t1;
+            }
+        }
+
+    
+        .toaster2{
+            img{
+                width: 100%;
+            }
+            background-color: var(--darkgrayblue);
+            border-radius: 50%;
+
+            @include lg{
+                grid-area: t2;
+            }
+        }
+
+        .toaster3{
+            img{
+                width: 100%;
+            }
+            background-color: var(--darkgrayblue);
+            border-radius: 50%;
+
+            @include lg{
+                grid-area: t3;
+            }
+        }
+
+
+        .featurepara1{
+            text-align: left;
+            padding: 0 200px 0 10px;
+
+            @include lg{
+                grid-area: f1;
+                margin-left: -500;
+                padding-right: 200px;
+            }
+        }
+
+        .featurepara2{
+            text-align: left;
+            padding-right: 20px;
+            padding: 20px 200px 0 10px;
+
+            @include lg{
+                grid-area: f2;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+
+        .featurepara3{
+            text-align: left;
+            margin-left: 200px;
+            padding-right: 50px;
+
+            @include lg{
+                grid-area: f3;
+                margin-left: -500;
+                padding-top: 100px;
+                padding-right: 50px;
+            }
+        }
+
+        .featurepara4{
+            text-align: left;
+            margin-left: 200px;
+            padding-right: 50px;
+
+            @include lg{
+                grid-area: f4;
+                padding-top: 100px;
+
+            }
+        }
+    }
 }

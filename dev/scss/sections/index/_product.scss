@@ -20,77 +20,41 @@
 
         ul{
             padding-top: 30px;
-        .productimage{
-                display: flex;
-                justify-content: start;
-                margin-left: 0px;
 
-                img{
-                    width: 40%;
-                }
-
-                @include lg{
-                    display: flex;
-                    justify-content: center;
-                    padding: 40x;
-            }
-
-        }
 
         li{
             .swatches{
-                    display: flex;
-                    justify-content: flex-end;
-                    list-style-type: none;
-                    padding-bottom: 5px;
-                    margin-right: -20px;
+                display: flex;
+                gap: 5px;
+                justify-content: flex-start;
+                list-style-type: none;
+                padding-bottom: 10px;
+                margin-top: -70px;
+                
 
-                    img{
-                        width: 70%;
-                        margin-left: -10px;
-                    }
-                    @include md{
-                        img{
-                            width: 90%;
-                            gap: 5px;
-                            
+                @include lg{
+                    margin-top: 0;
+                }
+                
 
-                        } 
-                        display: flex;
-                        justify-content: flex-start;
-                        list-style-type: none;
-                        padding-bottom: 10px;
-                    }
+                a:link, a:visited {
 
+                    border-radius: 50%;
+                    transition: 0.25s;
                     
+                    &:hover,
+                    &:active {
+                        padding: 10px;
 
-                    a:link, a:visited {
-
-                        border-radius: 50%;
-                        transition: 0.25s;
-                        
-                        &:hover,
-                        &:active {
-                            padding: 16px;
-
-                        }
                     }
+                }
             }
 
             .type{
+                grid-area: type;
                 display: flex;
                 flex-direction: column;
-                align-items: end;
                 list-style-type: none;
-                padding-bottom: 5px;
-
-                @include lg{ 
-                    display: flex;
-                    justify-content: start;
-                    align-items: start;
-                    margin-left: 0px;
-                }
-                
             }
         }
                 
@@ -100,7 +64,6 @@
             display: flex;
             justify-content: flex-end;
             align-content: right;
-            .buynow {float:left; display: inline; width: 49%;}
             padding: 40px 0 40px;
 
             a:link, a:visited {
@@ -131,13 +94,30 @@
                 grid-template-areas: 
                 "p1 p2 p3";
             }
+
             #p1{    
-                
+                display: grid;
+                gap: 16px;
+                grid-template-columns: 30% auto;
+                grid-template-areas: 
+                "product1 type"
+                ". swatches";
+
                 .product1{
-                    // position: absolute;
-                    // top: 3500px;
-                    // left: 25px;
                     width: 100px;
+                    grid-area: product1;
+                    padding: 16px 16px 0;
+                }
+
+                .type{
+                    grid-area: type;
+                    align-items: right;
+                    padding-top: 20px;
+                    padding-left: 10px;
+                }
+
+                .swatches{
+                    grid-area: swatches;
                 }
 
                 @include lg{
@@ -145,11 +125,24 @@
                     border: 1px solid transparent;
                     border-image: linear-gradient(to bottom, #647F95, black);
                     border-image-slice: 1;
-                    padding: 15px; 
+                    padding: 10px; 
+
+                    display: grid;
+                    gap: 16px;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: 
+                    ". product1 "
+                    "type . "
+                    "swatches . ";
+
+
 
                     .product1{
-                        width: 10%;
+                        width: 73%;
+                        padding: 0;
+                        align-items: center;
                     }
+                    
                 }
                 
                 
@@ -159,22 +152,46 @@
             
             }
             #p2{
+
+                display: grid;
+                gap: 16px;
+                grid-template-columns: 30% auto;
+                grid-template-areas: 
+                "product2 type"
+                ". swatches";
+
+                .type{
+                    grid-area: type;
+                    align-items: right;
+                    padding-top: 20px;
+                    padding-left: 10px;
+                }
+
+                .swatches{
+                    grid-area: swatches;
+                }
                 
                 .product2{
-                    // position: absolute;
-                    // top: 3740px;
-                    // left: 25px;
                     width: 110px;
+                    grid-area: product2;
+                    padding: 16px 16px 0;
                 }
                 @include lg{
                     grid-area: p2;  
                     border: 1px solid transparent;
                     border-image: linear-gradient(to bottom, #647F95, black);
                     border-image-slice: 1;
-                    padding: 15px;
+                    padding: 10px;
+
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: 
+                    ". product2 "
+                    "type . "
+                    "swatches . ";
 
                     .product2{
-                        width: 10%;
+                        width: 80%;
+                        padding: 0;
                     }
                 }
 
@@ -184,22 +201,47 @@
             
             }
             #p3{
+                display: grid;
+                gap: 16px;
+                grid-template-columns: 30% auto;
+                grid-template-areas: 
+                "product3 type"
+                ". swatches";
 
-                .product3{
-                    position: absolute;
-                    top: 3990px;
-                    left: 25px;
-                    width: 130px;
+                .type{
+                    grid-area: type;
+                    align-items: right;
+                    padding-top: 20px;
+                    padding-left: 10px;
                 }
+
+                .swatches{
+                    grid-area: swatches;
+                }
+                
+                .product3{
+                    width: 130px;
+                    grid-area: product3;
+                    padding: 16px 16px 0;
+                }
+
+                
                 @include lg{
                     grid-area: p3; 
                     border: 1px solid transparent;
                     border-image: linear-gradient(to bottom, #647F95, black);
                     border-image-slice: 1;
-                    padding: 15px;
+                    padding: 10px;
+
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: 
+                    ". product3 "
+                    "type . "
+                    "swatches . ";
 
                     .product3{
-                        width: 10%;
+                        width: 100%;
+                        padding: 0;
                     }
 
                 }
@@ -207,165 +249,5 @@
                 padding: 10px;
             }
         }
-
     }
-
-    
-
 }
-
-
-//     scroll-margin-top: 170px;
-
-//     @include xxl{
-//             display: grid;
-//             grid-template-columns: auto 1440px auto;
-//             grid-template-areas: ". explore .";
-//         }
-
-//     >div{
-//         grid-area: explore;
-//         padding: 24px;
-       
-//         font-family: 'Poppins', 'Regular', 'Sans-serif';
-//         img{
-//             width: 100%;
-//             height: 50% auto;
-//         }
-//         button{
-//             background-color: var(--flower);
-//             color: var(--iceblue);
-//             border: none;
-//             padding: 16px 24px;
-//             margin-bottom: 10px;
-//             margin-top: 10px;
-//         } 
-
-//         .description{
-//             height: 100%;
-//             box-sizing: border-box;
-//             padding: 16px;
-//         }
-
-//         a{
-//             padding-bottom: 16px;
-//         }
-
-    
-//         ul{
-
-//             @include md{
-//                 display: grid;
-//                 gap: 16px;
-//                 grid-template-columns: repeat(4, 1fr);
-//                 grid-template-areas: 
-//                 "e1 e1 e2 e2"
-//                 "e3 e3 e4 e4"
-//                 ". e5 e5 .";
-//             }
-
-//             @include lg{
-//                 display: grid;
-//                 gap: 16px;
-//                 grid-template-columns: repeat(6, 1fr);
-//                 grid-template-areas: 
-//                 "e1 e1 e2 e2 e3 e3"
-//                 ". e4 e4 e5 e5 .";
-//             }  
-
-
-//             .description{
-//                 height: 100%;
-//                 box-sizing: border-box;
-//                 padding: 16px;
-
-//             }
-
-//             a:link, a:visited {
-
-//                 color: (var(--iceblue));
-//                 text-decoration: none;
-//                 font-size: 16px;
-//                 font-weight: bold;
-//                 padding: 16px;
-//                 background-color: (var(--flower));
-//                 display: inline-block;
-//                 transition: 0.25s;
-//                 text-align: right;
-//                 border-radius: 0;
-                
-//                 &:hover,
-//                 &:active {
-//                     background-color: (var(--stormblue));
-//                     color: (var(--flower));
-//                     padding: 20px;
-//                 }
-//             }
-
-//             li{ 
-//                 background-color: var(--ice);
-//                 // text-align: center;
-//                 padding-bottom: 10px;
-
-//                 @include md{
-//                     display: grid;
-//                     grid-template-rows: 20vh auto;
-//                 }
-//             }
-
-//             .backimg-1{
-//                 background-image: url("../img/feature/drexel.jpg");
-//                 background-position: auto;
-//             }
-    
-//             .backimg-2{
-//                 background-image: url("../img/feature/makers.jpg");
-//                 background-position: auto;
-//             }
-//             .backimg-3{
-//                 background-image: url("../img/feature/compost.jpg");
-//                 background-position: auto;
-//             }
-    
-//             .backimg-4{
-//                 background-image: url("../img/feature/expert.jpg");
-//                 background-position: auto;
-//             }
-//             .backimg-5{
-//                 background-image: url("../img/feature/bulbs.jpg");
-//                 background-position: auto;
-//             }
-
-
-//             #e1{
-//                 @include md{
-//                     grid-area: e1;
-                    
-//                 }
-//             }
-//             #e2{
-//                 @include md{
-//                     grid-area: e2;
-                    
-//                 }
-//             }
-//             #e3{
-//                 @include md{
-//                     grid-area: e3;
-                        
-//                 }
-//             }
-//             #e4{
-//                 @include md{
-//                     grid-area: e4;
-                    
-//                 }
-//             }
-//             #e5{
-//                 @include md{
-//                     grid-area: e5;
-
-//                 }
-//             }
-//         }
-//     }

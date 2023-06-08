@@ -15,6 +15,7 @@ nav{
 
     display: none;
     text-align: right;
+    padding-bottom: 10px;
 
     
 
@@ -36,7 +37,7 @@ nav{
             text-align: right;
 
             @include lg{
-                margin-left: 16px;
+                margin-left: 10px;
             }
             a:link, a:visited{
                 display: inline-block;
@@ -44,17 +45,41 @@ nav{
                 font-size: 20px;
                 padding: 24px 26px;
                 
+                padding: 16px 10px;
+                transition: 0.25s;
+                font-size: 16px;
+
                 @include lg{
-                    padding: 16px 10px;
-                    transition: 0.25s;
                     font-size: 24px;
                 }
 
                 &:hover, &:active{
-                    @include lg{
-                        background-color: var(--offwhite);
-                    }
-                    
+                    background-color: var(--offwhite);
+                    border-radius: 30px;
+                    padding: 16px;
+                
+                }
+            }
+
+            button{
+                display: inline-block;
+                color: var(--darkgrayblue);
+                font-size: 20px;
+                padding: 24px 26px;
+                
+                padding: 16px 10px;
+                transition: 0.25s;
+                font-size: 16px;
+
+                @include lg{
+                    font-size: 24px;
+                }
+
+                &:hover, &:active{
+                    background-color: var(--offwhite);
+                    border-radius: 30px;
+                    padding: 16px;
+                
                 }
             }
         }
