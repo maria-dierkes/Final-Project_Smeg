@@ -5,7 +5,7 @@
 
 #accessories{
 
-    // scroll-margin-top: 170px;
+    scroll-margin-top: 60px;
 
     background-color: white;
 
@@ -15,7 +15,6 @@
             padding: 24px;
             background-color: white;
                 
-            text-align: center;
 
             img{
                 width: 100%;
@@ -48,14 +47,18 @@
                 }
                 
                 #a1{
+                    text-align: center;
                     @include md{
-                        grid-area: a1;  
+                        grid-area: a1; 
+                        text-align: left; 
                     }
                 
                 }
                 #a2{
+                    text-align: center;
                     @include md{
-                        grid-area: a2;  
+                        grid-area: a2; 
+                        text-align: left;
                     }
                 
                 }

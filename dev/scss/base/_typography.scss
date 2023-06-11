@@ -38,6 +38,8 @@ header{
         color: var(--titlewhite);
         font-size: 30px;
         font-weight: bold;
+        
+
     }
     h2, p{
         color: var(--darkgrayblue);
@@ -54,21 +56,6 @@ header{
         color: var(--offwhite);
         font-size: 30px;
     }
-
-    // @include medium{
-    //     h2{
-    //     color: var(--offwhite);
-    //     font-weight: bold;
-    // }
-    // h3{
-    //     color: var(--offwhite);
-    //     font-weight: lighter;
-    // }
-    // h4{
-    //     color: var(--titlewhite);
-    //     font-weight: lighter;
-    // }
-    // }
     
         h2{
             color: var(--offwhite);
@@ -129,9 +116,11 @@ footer{
 
     .title{
         color: var(--white);
+        font-size: 16px;
     }
     .items{
         color: var(--titlewhite);
+        font-size: 10px;
     }
 
     .textfooter{

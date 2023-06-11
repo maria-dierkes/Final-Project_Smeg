@@ -472,9 +472,11 @@ footer div {
 }
 footer div .title {
   color: var(--white);
+  font-size: 16px;
 }
 footer div .items {
   color: var(--titlewhite);
+  font-size: 10px;
 }
 footer div .textfooter {
   color: var(--white);
@@ -822,6 +824,7 @@ footer div #copyright {
     search
 ============= */
 #search {
+  scroll-margin-top: 100px;
   background-color: black;
   padding: 40px;
 }
@@ -864,7 +867,7 @@ footer div #copyright {
     features
 ============= */
 #features {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 60px;
   background-color: black;
   padding: 10px 40px 80px;
 }
@@ -872,6 +875,27 @@ footer div #copyright {
   color: var(--titlewhite);
   font-size: 35px;
   padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #features {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-areas: ". features .";
+  }
+}
+@media (min-width: 1024px) {
+  #features {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-areas: ". features .";
+  }
+}
+@media (min-width: 1200px) {
+  #features {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas: ". features .";
+  }
 }
 @media (min-width: 1024px) {
   #features #setup {
@@ -968,13 +992,13 @@ footer div #copyright {
     accessories
 ============= */
 #accessories {
+  scroll-margin-top: 60px;
   background-color: white;
 }
 #accessories div {
   grid-area: explore;
   padding: 24px;
   background-color: white;
-  text-align: center;
 }
 #accessories div img {
   width: 100%;
@@ -1001,20 +1025,31 @@ footer div #copyright {
     text-align: left;
   }
 }
+#accessories div ul #a1 {
+  text-align: center;
+}
 @media (min-width: 768px) {
   #accessories div ul #a1 {
     grid-area: a1;
+    text-align: left;
   }
+}
+#accessories div ul #a2 {
+  text-align: center;
 }
 @media (min-width: 768px) {
   #accessories div ul #a2 {
     grid-area: a2;
+    text-align: left;
   }
 }
 
 /* =============
     product
 ============= */
+#product {
+  scroll-margin-top: 80px;
+}
 #product div {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1198,6 +1233,7 @@ footer div #copyright {
     reviews
 ============= */
 #reviews {
+  scroll-margin-top: 60px;
   background-color: white;
   margin-bottom: 20px;
 }
@@ -1205,16 +1241,23 @@ footer div #copyright {
   padding: 24px;
   gap: 16px;
 }
-#reviews div .stars {
-  display: inline-block;
+#reviews div ul .profile {
+  margin-left: -30px;
+  grid-area: profile;
+}
+@media (min-width: 1024px) {
+  #reviews div ul .profile {
+    margin-left: -5px;
+    margin-top: 20px;
+  }
 }
 #reviews div ul .profile a:link, #reviews div ul .profile a:visited {
   background-color: var(--white);
   color: var(--darkgrayblue);
-  padding: 16px 16px 20px;
+  padding: 26px 26px 30px;
   border: 1px solid var(--darkgrayblue);
   transition: 0.25s;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 #reviews div ul .profile a:link:hover, #reviews div ul .profile a:link:active, #reviews div ul .profile a:visited:hover, #reviews div ul .profile a:visited:active {
   background-color: var(--darkgrayblue);
@@ -1235,24 +1278,112 @@ footer div #copyright {
   border-image-slice: 1;
   padding: 15px;
 }
+#reviews div ul .username {
+  grid-area: username;
+  margin-left: -90px;
+}
+#reviews div ul .date {
+  grid-area: date;
+}
+#reviews div ul .note {
+  grid-area: note;
+}
+#reviews div ul .colortoaster {
+  grid-area: color;
+}
+#reviews div ul .verified {
+  grid-area: verified;
+}
+#reviews div ul .review {
+  grid-area: review;
+}
+#reviews div ul .stars {
+  display: inline-block;
+  grid-area: stars;
+  margin-top: 20px;
+}
+#reviews div ul #r1 {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
+}
+@media (min-width: 768px) {
+  #reviews div ul #r1 {
+    grid-area: r1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
+  }
+}
 @media (min-width: 1024px) {
   #reviews div ul #r1 {
     grid-area: r1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "profile . username . . ." "stars stars note note . ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+  }
+}
+#reviews div ul #r2 {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
+}
+@media (min-width: 768px) {
+  #reviews div ul #r2 {
+    grid-area: r2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r2 {
     grid-area: r2;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "profile . username . . ." "stars stars note note . ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+  }
+}
+#reviews div ul #r3 {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
+}
+@media (min-width: 768px) {
+  #reviews div ul #r3 {
+    grid-area: r3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r3 {
     grid-area: r3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "profile . username . . ." "stars stars note note . ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+  }
+}
+#reviews div ul #r4 {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
+}
+@media (min-width: 768px) {
+  #reviews div ul #r4 {
+    grid-area: r4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r4 {
     grid-area: r4;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "profile . username . . ." "stars stars note note note ." "date date . . . ." "color color verified verified . ." "review review review review review review";
   }
 }
 
@@ -1263,6 +1394,7 @@ footer div #copyright {
   background-color: black;
   margin-top: 20px;
   padding: 20px;
+  scroll-margin-top: 70px;
 }
 #gallery div {
   display: grid;
@@ -1336,12 +1468,35 @@ footer div #copyright {
   margin-top: 95px;
   padding: 20px;
 }
+@media (min-width: 768px) {
+  #checkout {
+    border: none;
+  }
+}
+@media (min-width: 1024px) {
+  #checkout {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "process process . ." "order order code code" "order order calculate calculate" ". . confirm .";
+  }
+}
+#checkout #process {
+  grid-area: process;
+}
 #checkout #order {
+  grid-area: order;
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, #647F95, black);
   border-image-slice: 1;
 }
+@media (min-width: 768px) {
+  #checkout #order {
+    border: none;
+  }
+}
 #checkout #order .bluetoaster {
+  grid-area: bluetoaster;
   display: flex;
   margin-bottom: 20px;
 }
@@ -1353,9 +1508,10 @@ footer div #copyright {
   }
 }
 #checkout #order .bluetoaster img {
-  width: 200px;
+  width: 220px;
 }
 #checkout #order .pinktoaster {
+  grid-area: pinktoaster;
   display: flex;
 }
 @media (min-width: 768px) {
@@ -1390,6 +1546,9 @@ footer div #copyright {
   border-radius: 30px;
   padding: 16px 24px;
 }
+#checkout #code {
+  grid-area: code;
+}
 #checkout #code a:link, #checkout #code a:visited {
   color: var(--darkgrayblue);
   text-decoration: none;
@@ -1406,10 +1565,26 @@ footer div #copyright {
   padding: 20px;
 }
 #checkout #calculate {
+  grid-area: calculate;
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, #647F95, black);
   border-image-slice: 1;
   padding: 16px;
+}
+#checkout #calculate #subtotal {
+  display: flex;
+}
+#checkout #calculate #shipping {
+  display: flex;
+}
+#checkout #calculate #tax {
+  display: flex;
+}
+#checkout #calculate #totalamount {
+  display: flex;
+}
+#checkout #confirm {
+  grid-area: confirm;
 }
 #checkout #confirm a:link, #checkout #confirm a:visited {
   color: var(--darkgrayblue);
@@ -1425,6 +1600,12 @@ footer div #copyright {
   background-color: var(--darkgrayblue);
   color: var(--title);
   padding: 20px;
+}
+#checkout #confirm .shopping {
+  grid-area: shopping;
+}
+#checkout #confirm .place {
+  grid-area: place;
 }
 
 /* =============

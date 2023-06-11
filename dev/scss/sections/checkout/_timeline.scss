@@ -8,14 +8,41 @@
     margin-top: 95px;
     padding: 20px;
 
+
+    @include md{
+        border: none;
+    }
+
+    @include lg{
+        border: none;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas:
+        "process process . ."
+        "order order code code"
+        "order order calculate calculate"
+        ". . confirm .";
+    }
+    
+    #process{
+        grid-area: process;
+    }
+
     #order{
-            border: 1px solid transparent;
-            border-image: linear-gradient(to bottom, #647F95, black);
-            border-image-slice: 1;
+
+        @include md{
+            border: none;
+        }
+
+        grid-area: order;
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, #647F95, black);
+        border-image-slice: 1;
+
 
 
         .bluetoaster{
-
+            grid-area: bluetoaster;
             @include md{
                 border: 1px solid transparent;
                 border-image: linear-gradient(to right, #647F95, black);
@@ -26,16 +53,19 @@
 
             margin-bottom: 20px;
             img{
-                width: 200px;
+                width: 220px;
             }
         }
         .pinktoaster{
+            grid-area: pinktoaster;
+
             @include md{
                 border: 1px solid transparent;
                 border-image: linear-gradient(to right, #647F95, black);
                 border-image-slice: 1;
            }
             display: flex;
+
             img{
                 width: 200px;
             }
@@ -71,6 +101,7 @@
         }
     }  
     #code{
+        grid-area: code;
         a:link, a:visited {
 
             color: (var(--darkgrayblue));
@@ -92,12 +123,34 @@
     }
 
     #calculate{
-            border: 1px solid transparent;
-            border-image: linear-gradient(to bottom, #647F95, black);
-            border-image-slice: 1;
-            padding: 16px;
+        grid-area: calculate;
+
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, #647F95, black);
+        border-image-slice: 1;
+        padding: 16px;
+
+        #subtotal{
+            display: flex; 
+               
+        }
+
+        #shipping{
+            display: flex;
+        }
+
+        #tax{
+            display: flex;
+        }
+
+        #totalamount{
+            display: flex;
+        }
+        
     }
     #confirm{
+        grid-area: confirm;
+
        a:link, a:visited {
 
         color: (var(--darkgrayblue));
@@ -116,6 +169,16 @@
             padding: 20px;
         }
     } 
+    
+    .shopping{
+        grid-area: shopping;
     }
+
+    .place{
+        grid-area: place;
+    }
+    }
+
+    
     
 }
