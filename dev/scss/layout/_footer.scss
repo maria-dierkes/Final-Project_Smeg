@@ -35,17 +35,17 @@ footer{
     
                 color: (var(--titlewhite));
                 text-decoration: none;
-                font-size: 20px;
-                padding-top: 10px;
-                padding-bottom: 5px;
+                font-size: 16px;
                 transition: 0.25s;
                 display: inline-block;
+                // line-height: 30px;
+                padding-bottom: 10px;
                 
                 &:hover,
                 &:active {
                     background-color: (var(--offwhite));
                     color: (var(--darkgrayblue));
-                    padding: 16px;
+                    padding: 5px;
                 }
             }
         }
@@ -70,7 +70,7 @@ footer{
                 input{
                 background-color: var(--offwhite);
                 font-family: 'Poppins', 'Regular', 'Sans-serif';
-                color: (var(--offwhite));
+                color: (var(--darkgrayblue));
                 width: 70%;
                 border: 1px solid var(--offwhite);
                 border-radius: 20px;
@@ -79,6 +79,7 @@ footer{
     
                 button{
                     background-color: none;
+                    color: var(--darkgrayblue);
                     border: 1px solid (var(--offwhite));
                     border-radius: 30px;
                     padding: 10px 10px;

@@ -550,11 +550,6 @@ nav {
   text-align: right;
   padding-bottom: 10px;
 }
-@media (min-width: 1024px) {
-  nav {
-    display: block;
-  }
-}
 nav ul {
   position: center;
 }
@@ -699,16 +694,15 @@ footer div #info {
 footer div #info a:link, footer div #info a:visited {
   color: var(--titlewhite);
   text-decoration: none;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  font-size: 16px;
   transition: 0.25s;
   display: inline-block;
+  padding-bottom: 10px;
 }
 footer div #info a:link:hover, footer div #info a:link:active, footer div #info a:visited:hover, footer div #info a:visited:active {
   background-color: var(--offwhite);
   color: var(--darkgrayblue);
-  padding: 16px;
+  padding: 5px;
 }
 footer div #subscribe form {
   display: flex;
@@ -726,7 +720,7 @@ footer div #subscribe form {
 footer div #subscribe form input {
   background-color: var(--offwhite);
   font-family: "Poppins", "Regular", "Sans-serif";
-  color: var(--offwhite);
+  color: var(--darkgrayblue);
   width: 70%;
   border: 1px solid var(--offwhite);
   border-radius: 20px;
@@ -734,6 +728,7 @@ footer div #subscribe form input {
 }
 footer div #subscribe form button {
   background-color: none;
+  color: var(--darkgrayblue);
   border: 1px solid var(--offwhite);
   border-radius: 30px;
   padding: 10px 10px;
@@ -867,7 +862,7 @@ footer div #copyright {
     features
 ============= */
 #features {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 90px;
   background-color: black;
   padding: 10px 40px 80px;
 }
@@ -992,7 +987,7 @@ footer div #copyright {
     accessories
 ============= */
 #accessories {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 80px;
   background-color: white;
 }
 #accessories div {
@@ -1048,7 +1043,7 @@ footer div #copyright {
     product
 ============= */
 #product {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 90px;
 }
 #product div {
   margin-top: 20px;
@@ -1233,7 +1228,7 @@ footer div #copyright {
     reviews
 ============= */
 #reviews {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 80px;
   background-color: white;
   margin-bottom: 20px;
 }
@@ -1280,13 +1275,14 @@ footer div #copyright {
 }
 #reviews div ul .username {
   grid-area: username;
-  margin-left: -90px;
+  margin-left: -100px;
 }
 #reviews div ul .date {
   grid-area: date;
 }
 #reviews div ul .note {
   grid-area: note;
+  margin-left: -40px;
 }
 #reviews div ul .colortoaster {
   grid-area: color;
@@ -1394,7 +1390,7 @@ footer div #copyright {
   background-color: black;
   margin-top: 20px;
   padding: 20px;
-  scroll-margin-top: 70px;
+  scroll-margin-top: 90px;
 }
 #gallery div {
   display: grid;
@@ -1419,11 +1415,11 @@ footer div #copyright {
 #gallery div ul li {
   display: grid;
 }
-#gallery div ul li .viewmore {
+#gallery div ul .viewmore {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
-#gallery div ul li .viewmore a:link, #gallery div ul li .viewmore a:visited {
+#gallery div ul .viewmore a:link, #gallery div ul .viewmore a:visited {
   color: var(--darkgrayblue);
   text-decoration: none;
   font-size: 16px;
@@ -1434,7 +1430,7 @@ footer div #copyright {
   text-align: center;
   border-radius: 30px;
 }
-#gallery div ul li .viewmore a:link:hover, #gallery div ul li .viewmore a:link:active, #gallery div ul li .viewmore a:visited:hover, #gallery div ul li .viewmore a:visited:active {
+#gallery div ul .viewmore a:link:hover, #gallery div ul .viewmore a:link:active, #gallery div ul .viewmore a:visited:hover, #gallery div ul .viewmore a:visited:active {
   background-color: var(--darkgrayblue);
   color: var(--title);
   padding: 20px;
@@ -1483,12 +1479,113 @@ footer div #copyright {
 }
 #checkout #process {
   grid-area: process;
+  padding-left: 30px;
+}
+#checkout #process .circlecheckout {
+  margin-top: -50px;
+  margin-left: -30px;
+}
+#checkout #process #timelinecheckout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  #checkout #process #timelinecheckout {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#checkout #process #timelinecheckout a:link, #checkout #process #timelinecheckout a:visited {
+  background-color: var(--black);
+  color: var(--offwhite);
+  transition: 0.25s;
+  border-radius: 50%;
+}
+#checkout #process #timelinecheckout a:link:hover, #checkout #process #timelinecheckout a:link:active, #checkout #process #timelinecheckout a:visited:hover, #checkout #process #timelinecheckout a:visited:active {
+  background-color: var(--offwhite);
+  border: 1px solid var(--darkgrayblue);
+  color: var(--darkgrayblue);
+  padding: 20px;
+}
+#checkout #process #timelineaddress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #checkout #process #timelineaddress {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#checkout #process #timelineaddress a:link, #checkout #process #timelineaddress a:visited {
+  background-color: var(--black);
+  color: var(--offwhite);
+  transition: 0.25s;
+  border-radius: 50%;
+}
+#checkout #process #timelineaddress a:link:hover, #checkout #process #timelineaddress a:link:active, #checkout #process #timelineaddress a:visited:hover, #checkout #process #timelineaddress a:visited:active {
+  background-color: var(--offwhite);
+  border: 1px solid var(--darkgrayblue);
+  color: var(--darkgrayblue);
+  padding: 20px;
+}
+#checkout #process #timelinepayment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #checkout #process #timelinepayment {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#checkout #process #timelinepayment a:link, #checkout #process #timelinepayment a:visited {
+  background-color: var(--black);
+  color: var(--offwhite);
+  transition: 0.25s;
+  border-radius: 50%;
+}
+#checkout #process #timelinepayment a:link:hover, #checkout #process #timelinepayment a:link:active, #checkout #process #timelinepayment a:visited:hover, #checkout #process #timelinepayment a:visited:active {
+  background-color: var(--offwhite);
+  border: 1px solid var(--darkgrayblue);
+  color: var(--darkgrayblue);
+  padding: 20px;
+}
+#checkout #process #timelinereview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#checkout #process #timelinereview a:link, #checkout #process #timelinereview a:visited {
+  background-color: var(--black);
+  color: var(--darkgrayblue);
+  border: none;
+  transition: 0.25s;
+  border-radius: 50%;
+}
+#checkout #process #timelinereview a:link:hover, #checkout #process #timelinereview a:link:active, #checkout #process #timelinereview a:visited:hover, #checkout #process #timelinereview a:visited:active {
+  background-color: var(--offwhite);
+  border: 1px solid var(--darkgrayblue);
+  color: var(--darkgrayblue);
+  padding: 20px;
 }
 #checkout #order {
   grid-area: order;
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, #647F95, black);
   border-image-slice: 1;
+}
+#checkout #order .blue {
+  padding-left: 20px;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   #checkout #order {
@@ -1498,7 +1595,6 @@ footer div #copyright {
 #checkout #order .bluetoaster {
   grid-area: bluetoaster;
   display: flex;
-  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   #checkout #order .bluetoaster {
@@ -1508,7 +1604,33 @@ footer div #copyright {
   }
 }
 #checkout #order .bluetoaster img {
-  width: 220px;
+  width: 200px;
+}
+#checkout #order .bluetoaster #TOASTERBLUE {
+  display: flex;
+  flex-direction: column;
+  line-height: 0%;
+  text-align: right;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+#checkout #order #remove1 {
+  display: flex;
+  justify-content: end;
+  padding: 0 20px 50px 0;
+}
+#checkout #order #remove1 a:link, #checkout #order #remove1 a:visited {
+  background-color: transparent;
+  color: var(--darkgrayblue);
+  transition: 0.25s;
+  border-radius: 50%;
+}
+#checkout #order #remove1 a:link:hover, #checkout #order #remove1 a:link:active, #checkout #order #remove1 a:visited:hover, #checkout #order #remove1 a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--offwhite);
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 #checkout #order .pinktoaster {
   grid-area: pinktoaster;
@@ -1523,6 +1645,32 @@ footer div #copyright {
 }
 #checkout #order .pinktoaster img {
   width: 200px;
+}
+#checkout #order .pinktoaster #TOASTERPINK {
+  display: flex;
+  flex-direction: column;
+  line-height: 0%;
+  text-align: right;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+#checkout #order #remove2 {
+  display: flex;
+  justify-content: end;
+  padding: 0 20px 10px 0;
+}
+#checkout #order #remove2 a:link, #checkout #order #remove2 a:visited {
+  background-color: transparent;
+  color: var(--darkgrayblue);
+  transition: 0.25s;
+  border-radius: 50%;
+}
+#checkout #order #remove2 a:link:hover, #checkout #order #remove2 a:link:active, #checkout #order #remove2 a:visited:hover, #checkout #order #remove2 a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--offwhite);
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 #checkout form {
   display: flex;
@@ -1549,6 +1697,11 @@ footer div #copyright {
 #checkout #code {
   grid-area: code;
 }
+@media (min-width: 768px) {
+  #checkout #code {
+    margin: -20px;
+  }
+}
 #checkout #code a:link, #checkout #code a:visited {
   color: var(--darkgrayblue);
   text-decoration: none;
@@ -1570,21 +1723,29 @@ footer div #copyright {
   border-image: linear-gradient(to bottom, #647F95, black);
   border-image-slice: 1;
   padding: 16px;
+  line-height: 0%;
 }
 #checkout #calculate #subtotal {
   display: flex;
+  justify-content: space-between;
 }
 #checkout #calculate #shipping {
   display: flex;
+  justify-content: space-between;
 }
 #checkout #calculate #tax {
   display: flex;
+  justify-content: space-between;
 }
 #checkout #calculate #totalamount {
   display: flex;
+  justify-content: space-between;
 }
 #checkout #confirm {
   grid-area: confirm;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }
 #checkout #confirm a:link, #checkout #confirm a:visited {
   color: var(--darkgrayblue);
@@ -1615,12 +1776,7 @@ footer div #copyright {
   background-color: black;
   padding: 50px;
   align-content: center;
-  margin-top: 95px;
-}
-@media (min-width: 768px) {
-  #thankyou {
-    padding: 200px;
-  }
+  padding-top: 150px;
 }
 #thankyou #yourorder {
   border: 1px solid transparent;
@@ -1679,13 +1835,14 @@ footer div #copyright {
     grid-template-areas: ".  t1 t1 t3 t3 ." ". t2 t2 t4 t4 .";
   }
 }
+#thankyou ul #t1 {
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 1024px) {
   #thankyou ul #t1 {
     grid-area: t1;
   }
-}
-#thankyou ul #t1 img {
-  width: 300px;
 }
 #thankyou ul #t2 {
   text-align: center;
@@ -1695,13 +1852,14 @@ footer div #copyright {
     grid-area: t2;
   }
 }
+#thankyou ul #t3 {
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 1024px) {
   #thankyou ul #t3 {
     grid-area: t3;
   }
-}
-#thankyou ul #t3 img {
-  width: 250px;
 }
 #thankyou ul #t4 {
   text-align: center;

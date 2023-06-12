@@ -17,14 +17,9 @@ nav{
     text-align: right;
     padding-bottom: 10px;
 
-    
-
-    @include lg{
-        display: block;
-    }
-
     ul{
         position: center;
+        
         @include lg{
             display: flex;
             justify-content: flex-end;

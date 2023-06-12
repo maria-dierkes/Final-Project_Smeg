@@ -7,11 +7,8 @@
         background-color: black;
         padding: 50px;
         align-content: center;
-        margin-top: 95px;
+        padding-top: 150px;
 
-        @include md{
-            padding: 200px;
-        }
 
     #yourorder{
         
@@ -98,12 +95,10 @@
 
 
         #t1{
+            display: flex;
+            justify-content: center;
             @include lg{
                 grid-area: t1;  
-            }
-
-            img{
-                width: 300px;
             }
         
         }
@@ -116,14 +111,11 @@
         
         }
         #t3{
+            display: flex;
+            justify-content: center;
             @include lg{
                 grid-area: t3;  
             }
-
-            img{
-                width: 250px;
-            }
-        
 
         }
         #t4{

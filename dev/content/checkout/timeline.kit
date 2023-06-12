@@ -4,50 +4,72 @@
     
         <div id="process">
             <ul>
-                <li class="white">
-                    <i class="fa-sharp fa-solid fa-cart-shopping fa-2xl"></i>
+                <!-- <li>
+                    <div class="vertical-line"></div>
+                </li> -->
+                <!-- <li class="circlecheckout">
                     <img src="img/global/smallcircle.svg" alt="small circle 1">
+                </li> -->
+                <li id=timelinecheckout class="white">
                     <h1>CHECKOUT</h1>
+                    <a href="#"><i class="fa-sharp fa-solid fa-cart-shopping fa-2xl"></i></a>
                 </li>
-                <li class="white">
-                    <i class="fa-sharp fa-solid fa-location-pin fa-2xl"></i>
+                <li class="circlecheckout">
                     <img src="img/global/smallcircle.svg" alt="small circle 2">
+                </li>
+                <li id=timelineaddress class="white">
                     <h1>ADDRESS</h1>
+                    <a href="#"><i class="fa-sharp fa-solid fa-location-pin fa-2xl"></i></a>
                 </li>
-                <li class="white">
-                    <i class="fa-solid fa-credit-card fa-2xl"></i>
+                <li class="circlecheckout">
                     <img src="img/global/smallcircle.svg" alt="small circle 3">
-                    <h1>PAYMENT</h1>
                 </li>
+                <li id=timelinepayment class="white">
+                    <h1>PAYMENT</h1>
+                    <a href="#"><i class="fa-solid fa-credit-card fa-2xl"></i></a>
+                </li>
+                <li class="circlecheckout">
+                    <img src="img/global/smallcircle.svg" alt="small circle 4">
+                </li>
+                <li id=timelinereview class="blue">
+                    <h1>REVIEW & PLACE ORDER</h1>
+                    <a href="#"><i class="fa-sharp fa-solid fa-lock fa-2xl"></i></a>
+               </li>
             </ul>
         </div>
 
         <div id="order">
             <ul>
-                <li class="blue">
-                    <i class="fa-sharp fa-solid fa-lock fa-2xl"></i>
-                   <img src="img/global/smallcircle.svg" alt="small circle 4">
-                   <h1>REVIEW AND PLACE ORDER</h1>
-               </li>
+                
                 <li class="bluetoaster">
-                    <img src="img/elements/toaster3.svg" alt="pastel blue toaster">
-                    <section class="white">
+                    <img src="img/elements/bluetoaster.svg" alt="pastel blue toaster">
+                    <section id=TOASTERBLUE class="white">
                         <h2>Two Slice, Two Slot</h2>
                         <h3>$180.00</h3>
                         <h4>Quantity: 1</h4>
                         <h4>Color: Pastel Blue</h4>
                     </section> 
-                    <a class="blue" href="#">Remove</a>
                 </li>
+                <li>
+                    <section id="remove1">
+                       <a class="blue" href="#">Remove</a> 
+                    </section>
+                </li>
+                    
+                
                 <li class="pinktoaster">
                     <img src="img/elements/pinktoaster.svg" alt="pastel pink toaster">
-                    <section class="white">
+                    <section id=TOASTERPINK class="white">
                         <h2>Two Slice, Two Slot</h2>
                         <h3>$180.00</h3>
                         <h4>Quantity: 1</h4>
                         <h4>Color: Pastel Blue</h4>
                     </section> 
-                    <a class="blue" href="#">Remove</a>
+                </li>
+                <li>
+                    <section id="remove2">
+                       <a class="blue" href="#">Remove</a> 
+                    </section>
                 </li>
             </ul>
         </div>
@@ -65,8 +87,8 @@
 
         <section id=calculate>
             <div id=subtotal>
-                <h2 id=subtotal class="white">Subtotal:</h2>
-                <h2 id=amount class="blue" > $360.00</h2>
+                <h2 class="white">Subtotal:</h2>
+                <h2 class="blue" > $360.00</h2>
             </div>
                 
             <div id="shipping">
