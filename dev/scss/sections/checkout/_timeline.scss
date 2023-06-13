@@ -168,16 +168,24 @@
             display: flex;
 
             img{
-                width: 200px;
+                width: 150px;
             }
 
             #TOASTERBLUE{
             display: flex;
             flex-direction: column;
-            line-height: 0%;
+            line-height: 0;
             text-align: right;
             margin-left: 40px;
             padding-top: 20px;
+            padding-right: 10px;
+
+            h2{
+                line-height: 25px;
+            }
+            #colorblue{
+                line-height: 25px;
+            }
 
             }
             
@@ -209,16 +217,17 @@
         
         .pinktoaster{
             grid-area: pinktoaster;
+            display: flex;
 
             @include md{
                 border: 1px solid transparent;
                 border-image: linear-gradient(to right, #647F95, black);
                 border-image-slice: 1;
             }
-            display: flex;
+            
 
             img{
-                width: 200px;
+                width: 150px;
             }
 
             #TOASTERPINK{
@@ -228,6 +237,14 @@
             text-align: right;
             margin-left: 40px;
             padding-top: 20px;
+            padding-right: 10px;
+
+            h2{
+                line-height: 25px;
+            }
+            #colorpink{
+                line-height: 25px;
+            }
 
             }
            

@@ -2,21 +2,16 @@
     Typography
 ============= */
 
-
-/* =============
-    index
-============= */
-
 header{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
 }
 #discription{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     font-size: 16px;
     line-height: 19px;
 }
 #features{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     color: var(--offwhite);
     h1{
         color: var(--offwhite);
@@ -33,7 +28,7 @@ header{
     }
 }
 #accessories{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     h1{
         color: var(--titlewhite);
         font-size: 30px;
@@ -50,7 +45,7 @@ header{
     }
 }
 #product{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     line-height: 0px;
     h1{
         color: var(--offwhite);
@@ -75,7 +70,7 @@ header{
         
 }
 #reviews{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
 
     h1{
         font-size: 30px;
@@ -100,19 +95,19 @@ header{
 }
 
 #gallery{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     color: var(--title);
     font-weight: bold;
 }
 #search{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     color: var(--titlewhite);
 }
 
 footer{
 
     div{
-      font-family: 'Poppins', 'Regular' 'Sans-serif';
+      font-family: sans-serif;
 
     .title{
         color: var(--white);
@@ -141,7 +136,7 @@ footer{
 ============= */
 
 #checkout{
-    font-family: 'Poppins', 'Regular', 'Sans-serif';
+    font-family: sans-serif;
     
     .white{
         color: var(--white);
@@ -160,7 +155,7 @@ footer{
 #thankyou{
 
     #yourorder{
-        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        font-family: sans-serif;
         color: var(--white);
     h1{
         font-size: 40px;
@@ -168,7 +163,7 @@ footer{
     
     }
     #writereview{
-        font-family: 'Poppins', 'Regular', 'Sans-serif';
+        font-family: sans-serif;
         color: var(--darkgrayblue);
     }
 
