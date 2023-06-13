@@ -100,13 +100,7 @@
                 grid-template-columns: 30% auto;
                 grid-template-areas: 
                 "product1 type"
-                ". swatches";
-
-                .product1{
-                    width: 100px;
-                    grid-area: product1;
-                    padding: 16px 16px 0;
-                }
+                "product1 swatches";
 
                 .type{
                     grid-area: type;
@@ -115,11 +109,31 @@
                     padding-left: 10px;
                 }
 
+                .product1{
+                    width: 150%;
+                    margin-top: 10px;
+                    margin-left: -50px;
+                    grid-area: product1;
+                    
+                    @include md{
+                        width: 100%;
+                    }
+                }
+
                 .swatches{
                     grid-area: swatches;
+                    margin-top: -80px;
+
+                    @include md{
+                        margin-top: -100px;
+                    }
+                    @include lg{
+                        margin: 0;
+                    }
                 }
 
                 @include lg{
+                    padding-left: 20px;
                     grid-area: p1; 
                     border: 1px solid transparent;
                     border-image: linear-gradient(to bottom, #647F95, black);
@@ -134,13 +148,10 @@
                     "type . "
                     "swatches . ";
 
-
-                    .productimage{
                         .product1{
-                        width: 73%;
+                        width: 100%;
                         padding: 0;
-                    }
-                    
+                        margin: 0;
                     }
                     
                 }
@@ -152,7 +163,6 @@
             
             }
             #p2{
-
                 display: grid;
                 gap: 10px;
                 grid-template-columns: 30% auto;
@@ -169,14 +179,28 @@
 
                 .swatches{
                     grid-area: swatches;
+                    margin-top: -80px;
+
+                    @include md{
+                        margin-top: -100px;
+                    }
+                    @include lg{
+                        margin: 0;
+                    }
                 }
                 
                 .product2{
-                    width: 110px;
+                    width: 150%;
+                    margin-top: 10px;
+                    margin-left: -50px;
                     grid-area: product2;
-                    padding: 16px 16px 0;
+                    
+                    @include md{
+                        width: 100%;
+                    }
                 }
                 @include lg{
+                    padding-left: 20px;
                     grid-area: p2;  
                     border: 1px solid transparent;
                     border-image: linear-gradient(to bottom, #647F95, black);
@@ -190,8 +214,9 @@
                     "swatches . ";
 
                     .product2{
-                        width: 80%;
+                        width: 100%;
                         padding: 0;
+                        margin: 0;
                     }
                 }
 
@@ -217,12 +242,25 @@
 
                 .swatches{
                     grid-area: swatches;
+                    margin-top: -80px;
+
+                    @include md{
+                        margin-top: -100px;
+                    }
+                    @include lg{
+                        margin: 0;
+                    }
                 }
                 
                 .product3{
-                    width: 130px;
+                    width: 150%;
+                    margin-top: 10px;
+                    margin-left: -50px;
                     grid-area: product3;
-                    padding: 16px 16px 0;
+                    
+                    @include md{
+                        width: 100%;
+                    }
                 }
 
                 
@@ -242,6 +280,7 @@
                     .product3{
                         width: 100%;
                         padding: 0;
+                        margin: 0;
                     }
 
                 }

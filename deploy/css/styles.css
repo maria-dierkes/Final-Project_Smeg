@@ -547,7 +547,7 @@ html {
 
 nav {
   display: none;
-  text-align: right;
+  text-align: left;
   padding-bottom: 10px;
 }
 nav ul {
@@ -572,15 +572,14 @@ nav ul li {
 nav ul li a:link, nav ul li a:visited {
   display: inline-block;
   color: var(--darkgrayblue);
-  font-size: 20px;
+  font-size: 16px;
   padding: 24px 26px;
   padding: 16px 10px;
   transition: 0.25s;
-  font-size: 16px;
 }
 @media (min-width: 1024px) {
   nav ul li a:link, nav ul li a:visited {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
@@ -599,7 +598,7 @@ nav ul li button {
 }
 @media (min-width: 1024px) {
   nav ul li button {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 nav ul li button:hover, nav ul li button:active {
@@ -678,7 +677,7 @@ footer div {
   footer div {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
-    grid-template-areas: "care account info subscribe" "copyright copyrigh . .";
+    grid-template-areas: "care account info subscribe" "copyright copyright . .";
     padding: 30px 70px 20px;
   }
 }
@@ -1114,14 +1113,9 @@ footer div #copyright {
   display: grid;
   gap: 10px;
   grid-template-columns: 30% auto;
-  grid-template-areas: "product1 type" ". swatches";
+  grid-template-areas: "product1 type" "product1 swatches";
   border: 1px solid var(--darkgrayblue);
   padding: 10px;
-}
-#product div ul #p1 .product1 {
-  width: 100px;
-  grid-area: product1;
-  padding: 16px 16px 0;
 }
 #product div ul #p1 .type {
   grid-area: type;
@@ -1129,11 +1123,34 @@ footer div #copyright {
   padding-top: 20px;
   padding-left: 10px;
 }
+#product div ul #p1 .product1 {
+  width: 150%;
+  margin-top: 10px;
+  margin-left: -50px;
+  grid-area: product1;
+}
+@media (min-width: 768px) {
+  #product div ul #p1 .product1 {
+    width: 100%;
+  }
+}
 #product div ul #p1 .swatches {
   grid-area: swatches;
+  margin-top: -80px;
+}
+@media (min-width: 768px) {
+  #product div ul #p1 .swatches {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  #product div ul #p1 .swatches {
+    margin: 0;
+  }
 }
 @media (min-width: 1024px) {
   #product div ul #p1 {
+    padding-left: 20px;
     grid-area: p1;
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #647F95, black);
@@ -1144,9 +1161,10 @@ footer div #copyright {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: ". product1 " "type . " "swatches . ";
   }
-  #product div ul #p1 .productimage .product1 {
-    width: 73%;
+  #product div ul #p1 .product1 {
+    width: 100%;
     padding: 0;
+    margin: 0;
   }
 }
 #product div ul #p2 {
@@ -1165,14 +1183,32 @@ footer div #copyright {
 }
 #product div ul #p2 .swatches {
   grid-area: swatches;
+  margin-top: -80px;
+}
+@media (min-width: 768px) {
+  #product div ul #p2 .swatches {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  #product div ul #p2 .swatches {
+    margin: 0;
+  }
 }
 #product div ul #p2 .product2 {
-  width: 110px;
+  width: 150%;
+  margin-top: 10px;
+  margin-left: -50px;
   grid-area: product2;
-  padding: 16px 16px 0;
+}
+@media (min-width: 768px) {
+  #product div ul #p2 .product2 {
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   #product div ul #p2 {
+    padding-left: 20px;
     grid-area: p2;
     border: 1px solid transparent;
     border-image: linear-gradient(to bottom, #647F95, black);
@@ -1182,8 +1218,9 @@ footer div #copyright {
     grid-template-areas: ". product2 " "type . " "swatches . ";
   }
   #product div ul #p2 .product2 {
-    width: 80%;
+    width: 100%;
     padding: 0;
+    margin: 0;
   }
 }
 #product div ul #p3 {
@@ -1202,11 +1239,28 @@ footer div #copyright {
 }
 #product div ul #p3 .swatches {
   grid-area: swatches;
+  margin-top: -80px;
+}
+@media (min-width: 768px) {
+  #product div ul #p3 .swatches {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  #product div ul #p3 .swatches {
+    margin: 0;
+  }
 }
 #product div ul #p3 .product3 {
-  width: 130px;
+  width: 150%;
+  margin-top: 10px;
+  margin-left: -50px;
   grid-area: product3;
-  padding: 16px 16px 0;
+}
+@media (min-width: 768px) {
+  #product div ul #p3 .product3 {
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   #product div ul #p3 {
@@ -1221,6 +1275,7 @@ footer div #copyright {
   #product div ul #p3 .product3 {
     width: 100%;
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -1275,14 +1330,18 @@ footer div #copyright {
 }
 #reviews div ul .username {
   grid-area: username;
-  margin-left: -100px;
+  margin-left: -30px;
+}
+@media (min-width: 768px) {
+  #reviews div ul .username {
+    margin-left: -40px;
+  }
 }
 #reviews div ul .date {
   grid-area: date;
 }
 #reviews div ul .note {
   grid-area: note;
-  margin-left: -40px;
 }
 #reviews div ul .colortoaster {
   grid-area: color;
@@ -1299,87 +1358,91 @@ footer div #copyright {
   margin-top: 20px;
 }
 #reviews div ul #r1 {
+  margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 25% auto;
   grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
 }
 @media (min-width: 768px) {
   #reviews div ul #r1 {
     grid-area: r1;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
+    grid-template-columns: 15% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r1 {
     grid-area: r1;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "profile . username . . ." "stars stars note note . ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+    grid-template-columns: 25% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 #reviews div ul #r2 {
+  margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 25% auto;
   grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
 }
 @media (min-width: 768px) {
   #reviews div ul #r2 {
     grid-area: r2;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
+    grid-template-columns: 15% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r2 {
     grid-area: r2;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "profile . username . . ." "stars stars note note . ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+    grid-template-columns: 25% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 #reviews div ul #r3 {
+  margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 25% auto;
   grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
 }
 @media (min-width: 768px) {
   #reviews div ul #r3 {
     grid-area: r3;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
+    grid-template-columns: 15% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r3 {
     grid-area: r3;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "profile . username . . ." "stars stars note note . ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+    grid-template-columns: 25% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 #reviews div ul #r4 {
+  margin-bottom: 30px;
   display: grid;
-  grid-template-columns: 40% auto;
+  grid-template-columns: 25% auto;
   grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
 }
 @media (min-width: 768px) {
   #reviews div ul #r4 {
     grid-area: r4;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "profile username . ." "stars stars note note . ." "date date . ." "color color verified verified" "review review review review";
+    grid-template-columns: 15% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 @media (min-width: 1024px) {
   #reviews div ul #r4 {
     grid-area: r4;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "profile . username . . ." "stars stars note note note ." "date date . . . ." "color color verified verified . ." "review review review review review review";
+    grid-template-columns: 25% auto;
+    grid-template-areas: "profile username" "stars note" "date date" "color verified" "review review";
   }
 }
 
@@ -1417,7 +1480,7 @@ footer div #copyright {
 }
 #gallery div ul .viewmore {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 #gallery div ul .viewmore a:link, #gallery div ul .viewmore a:visited {
   color: var(--darkgrayblue);
