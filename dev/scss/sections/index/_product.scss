@@ -112,7 +112,7 @@
                 .product1{
                     width: 150%;
                     margin-top: 10px;
-                    margin-left: -50px;
+                    margin-left: -30px;
                     grid-area: product1;
                     
                     @include md{
@@ -122,10 +122,16 @@
 
                 .swatches{
                     grid-area: swatches;
-                    margin-top: -80px;
+                    margin-top: -30px;
+                    img{
+                        width: 30px;
+                    }
 
                     @include md{
                         margin-top: -100px;
+                        img{
+                            width: 100%;  
+                        }
                     }
                     @include lg{
                         margin: 0;
@@ -179,10 +185,16 @@
 
                 .swatches{
                     grid-area: swatches;
-                    margin-top: -80px;
+                    margin-top: -30px;
+                    img{
+                        width: 30px;
+                    }
 
                     @include md{
                         margin-top: -100px;
+                        img{
+                            width: 100%;  
+                        }
                     }
                     @include lg{
                         margin: 0;
@@ -192,7 +204,7 @@
                 .product2{
                     width: 150%;
                     margin-top: 10px;
-                    margin-left: -50px;
+                    margin-left: -30px;
                     grid-area: product2;
                     
                     @include md{
@@ -242,11 +254,18 @@
 
                 .swatches{
                     grid-area: swatches;
-                    margin-top: -80px;
+                    margin-top: -30px;
+                        img{
+                            width: 30px;
+                        }
 
                     @include md{
-                        margin-top: -100px;
+                        margin-top: -30px;
+                        img{
+                            width: 100%;
+                        }
                     }
+
                     @include lg{
                         margin: 0;
                     }
@@ -255,7 +274,7 @@
                 .product3{
                     width: 150%;
                     margin-top: 10px;
-                    margin-left: -50px;
+                    margin-left: -30px;
                     grid-area: product3;
                     
                     @include md{

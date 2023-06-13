@@ -786,7 +786,7 @@ footer div #copyright {
 #discription {
   background-color: black;
   color: var(--title);
-  padding: 20px 100px 0px;
+  padding: 20px 50px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -936,7 +936,7 @@ footer div #copyright {
 }
 #features #setup .featurepara1 {
   text-align: left;
-  padding: 0 200px 0 10px;
+  padding: 0 100px 0 10px;
 }
 @media (min-width: 1024px) {
   #features #setup .featurepara1 {
@@ -948,7 +948,7 @@ footer div #copyright {
 #features #setup .featurepara2 {
   text-align: left;
   padding-right: 20px;
-  padding: 20px 200px 0 10px;
+  padding: 20px 100px 0 10px;
 }
 @media (min-width: 1024px) {
   #features #setup .featurepara2 {
@@ -958,12 +958,13 @@ footer div #copyright {
   }
 }
 #features #setup .featurepara3 {
-  text-align: left;
-  margin-left: 200px;
-  padding-right: 50px;
+  text-align: right;
+  margin-left: 100px;
+  padding-right: 20px;
 }
 @media (min-width: 1024px) {
   #features #setup .featurepara3 {
+    text-align: left;
     grid-area: f3;
     margin-left: -500;
     padding-top: 100px;
@@ -971,12 +972,13 @@ footer div #copyright {
   }
 }
 #features #setup .featurepara4 {
-  text-align: left;
-  margin-left: 200px;
-  padding-right: 50px;
+  text-align: right;
+  margin-left: 100px;
+  padding-right: 20px;
 }
 @media (min-width: 1024px) {
   #features #setup .featurepara4 {
+    text-align: left;
     grid-area: f4;
     padding-top: 100px;
   }
@@ -1126,7 +1128,7 @@ footer div #copyright {
 #product div ul #p1 .product1 {
   width: 150%;
   margin-top: 10px;
-  margin-left: -50px;
+  margin-left: -30px;
   grid-area: product1;
 }
 @media (min-width: 768px) {
@@ -1136,11 +1138,17 @@ footer div #copyright {
 }
 #product div ul #p1 .swatches {
   grid-area: swatches;
-  margin-top: -80px;
+  margin-top: -30px;
+}
+#product div ul #p1 .swatches img {
+  width: 30px;
 }
 @media (min-width: 768px) {
   #product div ul #p1 .swatches {
     margin-top: -100px;
+  }
+  #product div ul #p1 .swatches img {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -1183,11 +1191,17 @@ footer div #copyright {
 }
 #product div ul #p2 .swatches {
   grid-area: swatches;
-  margin-top: -80px;
+  margin-top: -30px;
+}
+#product div ul #p2 .swatches img {
+  width: 30px;
 }
 @media (min-width: 768px) {
   #product div ul #p2 .swatches {
     margin-top: -100px;
+  }
+  #product div ul #p2 .swatches img {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -1198,7 +1212,7 @@ footer div #copyright {
 #product div ul #p2 .product2 {
   width: 150%;
   margin-top: 10px;
-  margin-left: -50px;
+  margin-left: -30px;
   grid-area: product2;
 }
 @media (min-width: 768px) {
@@ -1239,11 +1253,17 @@ footer div #copyright {
 }
 #product div ul #p3 .swatches {
   grid-area: swatches;
-  margin-top: -80px;
+  margin-top: -30px;
+}
+#product div ul #p3 .swatches img {
+  width: 30px;
 }
 @media (min-width: 768px) {
   #product div ul #p3 .swatches {
-    margin-top: -100px;
+    margin-top: -30px;
+  }
+  #product div ul #p3 .swatches img {
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -1254,7 +1274,7 @@ footer div #copyright {
 #product div ul #p3 .product3 {
   width: 150%;
   margin-top: 10px;
-  margin-left: -50px;
+  margin-left: -30px;
   grid-area: product3;
 }
 @media (min-width: 768px) {

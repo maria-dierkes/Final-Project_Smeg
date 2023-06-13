@@ -89,7 +89,7 @@
 
         .featurepara1{
             text-align: left;
-            padding: 0 200px 0 10px;
+            padding: 0 100px 0 10px;
 
             @include lg{
                 grid-area: f1;
@@ -101,7 +101,7 @@
         .featurepara2{
             text-align: left;
             padding-right: 20px;
-            padding: 20px 200px 0 10px;
+            padding: 20px 100px 0 10px;
 
             @include lg{
                 grid-area: f2;
@@ -111,11 +111,12 @@
         }
 
         .featurepara3{
-            text-align: left;
-            margin-left: 200px;
-            padding-right: 50px;
+            text-align: right;
+            margin-left: 100px;
+            padding-right: 20px;
 
             @include lg{
+                text-align: left;
                 grid-area: f3;
                 margin-left: -500;
                 padding-top: 100px;
@@ -124,11 +125,12 @@
         }
 
         .featurepara4{
-            text-align: left;
-            margin-left: 200px;
-            padding-right: 50px;
+            text-align: right;
+            margin-left: 100px;
+            padding-right: 20px;
 
             @include lg{
+                text-align: left;
                 grid-area: f4;
                 padding-top: 100px;
 
