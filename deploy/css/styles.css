@@ -547,7 +547,7 @@ html {
 
 nav {
   display: none;
-  text-align: left;
+  text-align: right;
   padding-bottom: 10px;
 }
 nav ul {
@@ -1886,6 +1886,25 @@ footer div #copyright {
   display: inline-block;
 }
 #thankyou #writereview a:link:hover, #thankyou #writereview a:link:active, #thankyou #writereview a:visited:hover, #thankyou #writereview a:visited:active {
+  background-color: var(--darkgrayblue);
+  color: var(--title);
+  padding: 20px;
+}
+#thankyou #writereview #continueshopping {
+  display: flex;
+  justify-content: center;
+}
+#thankyou #writereview #continueshopping a:link, #thankyou #writereview #continueshopping a:visited {
+  color: var(--darkgrayblue);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid var(--darkgrayblue);
+  transition: 0.25s;
+  border-radius: 20px;
+  display: inline-block;
+}
+#thankyou #writereview #continueshopping a:link:hover, #thankyou #writereview #continueshopping a:link:active, #thankyou #writereview #continueshopping a:visited:hover, #thankyou #writereview #continueshopping a:visited:active {
   background-color: var(--darkgrayblue);
   color: var(--title);
   padding: 20px;

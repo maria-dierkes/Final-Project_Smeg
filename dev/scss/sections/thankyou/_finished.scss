@@ -26,9 +26,7 @@
     #writereview{
 
         display: grid;
-
         text-align: center;
-
         margin-top: 20px;
 
         form{
@@ -76,6 +74,30 @@
                     background-color: (var(--darkgrayblue));
                     color: (var(--title));
                     padding: 20px;
+                }
+            }
+
+            #continueshopping{
+                display: flex;
+                justify-content: center;
+
+                a:link, a:visited {
+
+                    color: (var(--darkgrayblue));
+                    text-decoration: none;
+                    font-size: 16px;
+                    padding: 16px;
+                    border: 1px solid var(--darkgrayblue);
+                    transition: 0.25s;
+                    border-radius: 20px;
+                    display: inline-block;
+                    
+                    &:hover,
+                    &:active {
+                        background-color: (var(--darkgrayblue));
+                        color: (var(--title));
+                        padding: 20px;
+                    }
                 }
             }
     }
