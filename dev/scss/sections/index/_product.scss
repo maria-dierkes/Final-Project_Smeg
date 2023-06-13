@@ -20,42 +20,41 @@
         ul{
             padding-top: 30px;
 
-
-        li{
-            .swatches{
-                display: flex;
-                gap: 5px;
-                justify-content: flex-start;
-                list-style-type: none;
-                padding-bottom: 10px;
-                margin-top: -70px;
-                
-
-                @include lg{
-                    margin-top: 0;
-                }
-                
-
-                a:link, a:visited {
-
-                    border-radius: 50%;
-                    transition: 0.25s;
+            li{
+                .swatches{
+                    display: flex;
+                    gap: 5px;
+                    justify-content: flex-start;
+                    list-style-type: none;
+                    padding-bottom: 10px;
+                    margin-top: -70px;
                     
-                    &:hover,
-                    &:active {
-                        padding: 10px;
 
+                    @include lg{
+                        margin-top: 0;
+                    }
+                    
+
+                    a:link, a:visited {
+
+                        border-radius: 50%;
+                        transition: 0.25s;
+                        
+                        &:hover,
+                        &:active {
+                            padding: 10px;
+
+                        }
                     }
                 }
-            }
 
-            .type{
-                grid-area: type;
-                display: flex;
-                flex-direction: column;
-                list-style-type: none;
+                .type{
+                    grid-area: type;
+                    display: flex;
+                    flex-direction: column;
+                    list-style-type: none;
+                }
             }
-        }
                 
 
         .buynow{
@@ -88,7 +87,8 @@
             
             @include lg{
                 display: grid;
-                gap: 16px;
+                gap: 10px;
+                padding: 20px 20px 0;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas: 
                 "p1 p2 p3";
@@ -96,7 +96,7 @@
 
             #p1{    
                 display: grid;
-                gap: 16px;
+                gap: 10px;
                 grid-template-columns: 30% auto;
                 grid-template-areas: 
                 "product1 type"
@@ -135,11 +135,12 @@
                     "swatches . ";
 
 
-
-                    .product1{
+                    .productimage{
+                        .product1{
                         width: 73%;
                         padding: 0;
-                        align-items: center;
+                    }
+                    
                     }
                     
                 }
@@ -153,7 +154,7 @@
             #p2{
 
                 display: grid;
-                gap: 16px;
+                gap: 10px;
                 grid-template-columns: 30% auto;
                 grid-template-areas: 
                 "product2 type"
@@ -201,7 +202,7 @@
             }
             #p3{
                 display: grid;
-                gap: 16px;
+                gap: 10px;
                 grid-template-columns: 30% auto;
                 grid-template-areas: 
                 "product3 type"

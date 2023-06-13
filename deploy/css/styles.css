@@ -1009,7 +1009,7 @@ footer div #copyright {
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, #647F95, white);
   border-image-slice: 2;
-  padding: 15px;
+  padding: 20px;
 }
 @media (min-width: 768px) {
   #accessories div ul {
@@ -1104,14 +1104,15 @@ footer div #copyright {
 @media (min-width: 1024px) {
   #product div ul {
     display: grid;
-    gap: 16px;
+    gap: 10px;
+    padding: 20px 20px 0;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "p1 p2 p3";
   }
 }
 #product div ul #p1 {
   display: grid;
-  gap: 16px;
+  gap: 10px;
   grid-template-columns: 30% auto;
   grid-template-areas: "product1 type" ". swatches";
   border: 1px solid var(--darkgrayblue);
@@ -1143,15 +1144,14 @@ footer div #copyright {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: ". product1 " "type . " "swatches . ";
   }
-  #product div ul #p1 .product1 {
+  #product div ul #p1 .productimage .product1 {
     width: 73%;
     padding: 0;
-    align-items: center;
   }
 }
 #product div ul #p2 {
   display: grid;
-  gap: 16px;
+  gap: 10px;
   grid-template-columns: 30% auto;
   grid-template-areas: "product2 type" ". swatches";
   border: 1px solid var(--darkgrayblue);
@@ -1188,7 +1188,7 @@ footer div #copyright {
 }
 #product div ul #p3 {
   display: grid;
-  gap: 16px;
+  gap: 10px;
   grid-template-columns: 30% auto;
   grid-template-areas: "product3 type" ". swatches";
   border: 1px solid var(--darkgrayblue);
