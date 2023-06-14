@@ -634,9 +634,6 @@ header #logo-container {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-header #logo-container img {
-  padding-left: 40px;
-}
 header #burger-container {
   grid-area: burger-btn;
   display: flex;
